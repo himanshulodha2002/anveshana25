@@ -1,0 +1,8 @@
+@font-face {
+  font-family: "Dune Rise";
+  src: url("../public/dune-theme/Dune_Rise.ttf") format("truetype");
+}
+
+body {
+  font-family: "Dune Rise", sans-serif;
+}
