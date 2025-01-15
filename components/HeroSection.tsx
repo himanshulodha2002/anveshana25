@@ -124,15 +124,15 @@ HeroSectionProps) {
         transition={{ duration: 1 }}
       />
       <motion.div
-        className="absolute bottom-0 w-full h-screen z-5 overflow-hidden"
+        className="absolute bottom-0 w-full h-[70vh] z-5 overflow-hidden"
         style={{ y: duneY }}
       >
         {/* First wave layer */}
         <motion.div
-          className="absolute bottom-[-20%] w-[400vw] h-[80vh]" // Adjusted position and height
+          className="absolute bottom-0 w-[400vw] h-[60vh] z-[1]"
           animate={{
             x: ["0%", "-50%"],
-            y: [0, -20, 0, -15, 0],
+            y: [0, -10, 0, -15, 0],
           }}
           transition={{
             x: {
@@ -157,10 +157,10 @@ HeroSectionProps) {
 
         {/* Second wave layer */}
         <motion.div
-          className="absolute bottom-[-15%] w-[400vw] h-[60vh]" // Adjusted position and height
+          className="absolute bottom-0 w-[400vw] h-[50vh] z-[2]"
           animate={{
             x: ["0%", "-50%"],
-            y: [0, -15, 0, -25, 0],
+            y: [0, -15, 0, -10, 0],
           }}
           transition={{
             x: {
@@ -185,10 +185,10 @@ HeroSectionProps) {
 
         {/* Third wave layer */}
         <motion.div
-          className="absolute bottom-[-10%] w-[400vw] h-[50vh]" // Adjusted position and height
+          className="absolute bottom-0 w-[400vw] h-[40vh] z-[3]"
           animate={{
             x: ["0%", "-50%"],
-            y: [0, -25, 0, -20, 0],
+            y: [0, -20, 0, -15, 0],
           }}
           transition={{
             x: {
@@ -198,7 +198,7 @@ HeroSectionProps) {
             },
             y: {
               duration: 12,
-              times: [0, 0.4, 0.6, 8, 1],
+              times: [0, 0.4, 0.6, 0.8, 1],
               repeat: Infinity,
               ease: "easeInOut",
             },
