@@ -15,8 +15,8 @@ interface HeroSectionProps {
 export default function HeroSection({
   textY,
   duneY,
-  sandwormY,
-}: HeroSectionProps) {
+}: // sandwormY,
+HeroSectionProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
