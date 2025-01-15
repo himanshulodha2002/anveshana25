@@ -1,12 +1,12 @@
 import SandwormAnimation from "@/components/SandwormAnimation";
 import { Button } from "@/components/ui/Button";
-import { motion, useTransform } from "framer-motion";
+import { motion, MotionValue } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 
 interface HeroSectionProps {
-  textY: any;
-  duneY: any;
-  sandwormY: any;
+  textY: MotionValue<number>;
+  duneY: MotionValue<number>;
+  sandwormY: MotionValue<number>;
 }
 
 export default function HeroSection({

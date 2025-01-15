@@ -1,8 +1,8 @@
-import { motion, useAnimationControls } from "framer-motion";
+import { motion, MotionValue, useAnimationControls } from "framer-motion";
 import { useEffect } from "react";
 
 interface SandwormAnimationProps {
-  sandwormY: any;
+  sandwormY: MotionValue<number>;
 }
 
 export default function SandwormAnimation({
