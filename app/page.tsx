@@ -1,8 +1,10 @@
 "use client";
 
+import AboutEvent from "@/components/AboutTheEvent";
 import CallToActionSection from "@/components/CallToActionSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import HeroSection from "@/components/HeroSection";
+import PrizeSection from "@/components/PrizeSection";
 import SandParticles from "@/components/SandParticles";
 import { useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
@@ -32,7 +34,9 @@ export default function DuneLanding() {
       className="min-h-[300vh] bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 relative overflow-hidden"
     >
       <HeroSection textY={textY} duneY={duneY} sandwormY={sandwormY} />
+      <AboutEvent/>
       <FeaturesSection />
+      <PrizeSection/>
       <CallToActionSection />
       <div className="fixed inset-0 pointer-events-none z-50">
         {mounted && <SandParticles />}
