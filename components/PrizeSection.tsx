@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/Card";
-import {Trophy, QrCode, Medal, Gift } from 'lucide-react'
+import {Trophy, Medal, Gift } from 'lucide-react'
 
 const prizes = [
     {

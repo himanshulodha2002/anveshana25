@@ -2,9 +2,6 @@
 
 import { motion } from "framer-motion"
 import { Card } from "@/components/ui/Card";
-import { Button } from "./ui/Button";
-import {Trophy, QrCode } from 'lucide-react'
-
 
 export default function AboutEvent() {
   return (
@@ -33,13 +30,14 @@ export default function AboutEvent() {
             className="mb-16"
           >
             <p className="text-orange-200 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-center font-mono">
-              BMSIT&M PRESENTS "ANVESHANA PROTOTYPE COMPETITION 2024-25," A NATIONAL
+              BMSIT&amp;M PRESENTS &quot;ANVESHANA PROTOTYPE COMPETITION 2024-25,&quot; A NATIONAL
               LEVEL INNOVATION CHALLENGE FOR STUDENTS, FOCUSED ON REAL-WORLD PROBLEMS
               THAT BRIDGE ACADEMIA AND INDUSTRY. PARTICIPANTS WILL INNOVATE AND
               PROTOTYPE SOLUTIONS TO PRACTICAL CHALLENGES. THIS EVENT OFFERS A
               PLATFORM FOR STUDENTS TO SHOWCASE THEIR SKILLS AND GAIN VALUABLE
               EXPERIENCE.
             </p>
+
           </motion.div>
 
           {/* Stats Grid */}
