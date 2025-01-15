@@ -1,4 +1,4 @@
-import SandwormAnimation from "@/components/SandwormAnimation";
+// import SandwormAnimation from "@/components/SandwormAnimation";
 import { Button } from "@/components/ui/Button";
 import { motion, MotionValue } from "framer-motion";
 import { ChevronDown } from "lucide-react";
@@ -283,7 +283,7 @@ export default function HeroSection({
         </motion.div>
       </motion.div>
 
-      <SandwormAnimation sandwormY={sandwormY} />
+      {/* <SandwormAnimation sandwormY={sandwormY} /> */}
     </section>
   );
 }
