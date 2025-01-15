@@ -1,4 +1,4 @@
-import SandwormAnimation from "@/components/SandwormAnimation";
+// import SandwormAnimation from "@/components/SandwormAnimation";
 import { Button } from "@/components/ui/Button";
 import { motion, MotionValue } from "framer-motion";
 import { ChevronDown } from "lucide-react";
@@ -12,8 +12,8 @@ interface HeroSectionProps {
 export default function HeroSection({
   textY,
   duneY,
-  sandwormY,
-}: HeroSectionProps) {
+}: // sandwormY,
+HeroSectionProps) {
   return (
     <section className="h-screen relative overflow-hidden flex items-center justify-center">
       {/* Background overlay */}
@@ -45,7 +45,7 @@ export default function HeroSection({
       </motion.div>
 
       {/* Sandworm - placed directly in section */}
-      <SandwormAnimation sandwormY={sandwormY} />
+      {/* <SandwormAnimation sandwormY={sandwormY} /> */}
 
       {/* Content */}
       <motion.div
