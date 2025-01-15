@@ -1,3 +1,5 @@
+import Header from "@/components/ui/header";
+import ActiveSectionContextProvider from "@/context/active-section-context";
 import type { Metadata } from "next";
 import "../styles/globals.css";
 
@@ -16,7 +18,10 @@ export default function RootLayout({
       <body
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ActiveSectionContextProvider>
+          <Header />
+          {children}
+        </ActiveSectionContextProvider>
       </body>
     </html>
   );
