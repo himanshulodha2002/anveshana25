@@ -29,7 +29,7 @@ export default function DuneLanding() {
   return (
     <div
       ref={containerRef}
-      className="min-h-[300vh] bg-gradient-to-b from-orange-900 via-orange-800 to-orange-950 relative overflow-hidden"
+      className="min-h-[300vh] bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 relative overflow-hidden"
     >
       <HeroSection textY={textY} duneY={duneY} sandwormY={sandwormY} />
       <FeaturesSection />

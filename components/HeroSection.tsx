@@ -4,6 +4,7 @@ import { motion, MotionValue } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect, useState } from "react";
 
 interface HeroSectionProps {
   textY: MotionValue<number>;
@@ -15,121 +16,274 @@ export default function HeroSection({
   textY,
   duneY,
   sandwormY,
-}: // sandwormY,
-HeroSectionProps) {
+}: HeroSectionProps) {
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      setMousePosition({
+        x: e.clientX,
+        y: e.clientY,
+      });
+    };
+
+    window.addEventListener("mousemove", handleMouseMove);
+    return () => window.removeEventListener("mousemove", handleMouseMove);
+  }, []);
+
   return (
-    <section className="h-screen relative overflow-hidden flex items-center justify-center ">
-      {/* Left Corner Logo */}
-      <Link
-        href="https://bmsit.ac.in"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <div className="absolute md:top-4 top-[5.8rem] left-4 z-30">
-          <Image
-            src="/images/bmsitfulllogo.png"
-            alt="BMSIT Logo"
-            width={70}
-            height={80}
-            className="h-16 md:h-20 w-auto transition-transform hover:scale-110"
-            priority
-            quality={100}
-            unoptimized
-          />
-        </div>
-      </Link>
-
-      {/* Right Corner Logos */}
-
-      <div className="absolute md:top-0 top-[5.2rem] right-0 md:right-6 z-30 flex items-center gap-3">
-        <Image
-          src="/images/anveshanalogo.png"
-          alt="Anveshana Logo"
-          width={100}
-          height={100}
-          className="h-16 md:h-20 w-auto transition-transform hover:scale-110"
-        />
-        <Image
-          src="/images/iiclogo.png"
-          alt="IIC Logo"
-          width={100}
-          height={100}
-          className="h-16 md:h-20 w-auto transition-transform hover:scale-110"
-        />
-      </div>
-
-      {/* Background overlay */}
-
-      <div className="absolute inset-0 bg-black/40 z-10" />
-      {/* Dune background */}
+    <section className="h-screen relative overflow-hidden flex items-center justify-center bg-gradient-to-b from-orange-950 via-orange-900 to-orange-950">
+      {/* Floating shapes */}
       <motion.div
-        className="absolute bottom-0 w-full h-[70vh] z-5"
+        className="absolute inset-0 pointer-events-none"
+        animate={{
+          background: [
+            "radial-gradient(circle at 0% 0%, rgba(251, 146, 60, 0.1) 0%, transparent 50%)",
+            "radial-gradient(circle at 100% 100%, rgba(251, 146, 60, 0.1) 0%, transparent 50%)",
+          ],
+        }}
+        transition={{
+          duration: 5,
+          repeat: Infinity,
+          repeatType: "reverse",
+        }}
+      />
+
+      {/* Interactive background */}
+      <motion.div
+        className="absolute inset-0 opacity-30"
+        style={{
+          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, rgba(251, 146, 60, 0.2) 0%, transparent 35%)`,
+        }}
+      />
+
+      {/* Logos with entrance animations */}
+      <motion.div
+        initial={{ x: -100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        <Link
+          href="https://bmsit.ac.in"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <div className="absolute md:top-4 top-[5.8rem] left-4 z-30">
+            <Image
+              src="/images/bmsitfulllogo.png"
+              alt="BMSIT Logo"
+              width={70}
+              height={80}
+              className="h-16 md:h-20 w-auto transition-transform hover:scale-110"
+              priority
+              quality={100}
+              unoptimized
+            />
+          </div>
+        </Link>
+      </motion.div>
+
+      {/* Right Corner Logos with staggered entrance */}
+      <motion.div
+        className="absolute md:top-0 top-[5.2rem] right-0 md:right-6 z-30 flex items-center gap-3"
+        initial={{ x: 100, opacity: 0 }}
+        animate={{ x: 0, opacity: 1 }}
+        transition={{ duration: 0.8, delay: 0.4 }}
+      >
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <Image
+            src="/images/anveshanalogo.png"
+            alt="Anveshana Logo"
+            width={100}
+            height={100}
+            className="h-16 md:h-20 w-auto"
+          />
+        </motion.div>
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <Image
+            src="/images/iiclogo.png"
+            alt="IIC Logo"
+            width={100}
+            height={100}
+            className="h-16 md:h-20 w-auto"
+          />
+        </motion.div>
+      </motion.div>
+
+      {/* Enhanced background animations */}
+      <motion.div
+        className="absolute inset-0 bg-black/40 z-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 0.4 }}
+        transition={{ duration: 1 }}
+      />
+      <motion.div
+        className="absolute bottom-0 w-full h-screen z-5 overflow-hidden"
         style={{ y: duneY }}
       >
-        <div className="absolute inset-0 bg-gradient-to-t from-orange-900 to-transparent" />
+        {/* First wave layer */}
         <motion.div
-          className="absolute inset-0"
+          className="absolute bottom-[-20%] w-[400vw] h-[80vh]" // Adjusted position and height
           animate={{
-            backgroundPositionX: ["0%", "100%"],
+            x: ["0%", "-50%"],
+            y: [0, -20, 0, -15, 0],
           }}
           transition={{
-            duration: 20,
-            ease: "linear",
-            repeat: Infinity,
+            x: {
+              duration: 20,
+              ease: "linear",
+              repeat: Infinity,
+            },
+            y: {
+              duration: 8,
+              times: [0, 0.2, 0.5, 0.8, 1],
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
           }}
           style={{
-            backgroundImage: `url("data:image/svg+xml,%3Csvg viewBox='0 0 1000 1000' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,500 C200,400 400,300 500,500 C600,700 800,600 1000,500 L1000,1000 L0,1000 Z' fill='%23c2410c'/%3E%3C/svg%3E")`,
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-            backgroundRepeat: "repeat-x",
+            background: "linear-gradient(180deg, #9a3412 0%, #c2410c 100%)",
+            borderTopLeftRadius: "50% 80%",
+            borderTopRightRadius: "50% 80%",
+            opacity: 0.8,
+          }}
+        />
+
+        {/* Second wave layer */}
+        <motion.div
+          className="absolute bottom-[-15%] w-[400vw] h-[60vh]" // Adjusted position and height
+          animate={{
+            x: ["0%", "-50%"],
+            y: [0, -15, 0, -25, 0],
+          }}
+          transition={{
+            x: {
+              duration: 25,
+              ease: "linear",
+              repeat: Infinity,
+            },
+            y: {
+              duration: 10,
+              times: [0, 0.3, 0.5, 0.7, 1],
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+          }}
+          style={{
+            background: "linear-gradient(180deg, #ea580c 0%, #9a3412 100%)",
+            borderTopLeftRadius: "60% 80%",
+            borderTopRightRadius: "60% 80%",
+            opacity: 0.6,
+          }}
+        />
+
+        {/* Third wave layer */}
+        <motion.div
+          className="absolute bottom-[-10%] w-[400vw] h-[50vh]" // Adjusted position and height
+          animate={{
+            x: ["0%", "-50%"],
+            y: [0, -25, 0, -20, 0],
+          }}
+          transition={{
+            x: {
+              duration: 30,
+              ease: "linear",
+              repeat: Infinity,
+            },
+            y: {
+              duration: 12,
+              times: [0, 0.4, 0.6, 8, 1],
+              repeat: Infinity,
+              ease: "easeInOut",
+            },
+          }}
+          style={{
+            background: "linear-gradient(180deg, #fb923c 0%, #ea580c 100%)",
+            borderTopLeftRadius: "70% 100%",
+            borderTopRightRadius: "70% 100%",
+            opacity: 0.4,
           }}
         />
       </motion.div>
-      {/* Sandworm - placed directly in section */}
-      <SandwormAnimation sandwormY={sandwormY} />
 
-      {/* Content */}
-
+      {/* Enhanced content animations */}
       <motion.div
-        className="relative z-20 text-center space-y-6 max-w-4xl mx-auto px-4"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+        className="relative z-20 text-center space-y-8 max-w-4xl mx-auto px-4"
         style={{ y: textY }}
       >
-        <h1 className="text-3xl lg:text-8xl font-bold text-white">ANVESHANA</h1>
-        <p className="text-xl md:text-2xl text-orange-200">
+        <motion.h1
+          className="text-4xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 [text-shadow:_0_2px_20px_rgb(251_146_60_/_20%)]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+        >
+          ANVESHANA
+        </motion.h1>
+
+        <motion.p
+          className="text-xl md:text-2xl text-orange-200/90 [text-shadow:_0_2px_10px_rgb(251_146_60_/_20%)]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
           Fear is the mind-killer. Fear is the little-death that brings total
           obliteration.
-        </p>
+        </motion.p>
 
-        <div className="flex gap-4 justify-center">
+        <motion.div
+          className="flex gap-4 justify-center"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 1 }}
+        >
           <Link
             href="https://unstop.com/p/anveshana-bms-institute-of-technology-and-management-1350340?ref=x70LNhV5"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <Button
-              size="lg"
-              className="bg-orange-600 hover:bg-orange-700 text-white"
-            >
-              Register
-            </Button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-orange-600 hover:bg-orange-700 text-white"
+              >
+                Register
+              </Button>
+            </motion.div>
           </Link>
           <Link href="/about" target="_blank" rel="noopener noreferrer">
-            <Button
-              size="lg"
-              className="bg-white bg-opacity-40 text-gray-900 hover:bg-orange-600/20"
-            >
-              Learn More
-            </Button>
+            <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+              <Button
+                size="lg"
+                className="bg-white bg-opacity-40 text-gray-900 hover:bg-orange-600/20"
+              >
+                Learn More
+              </Button>
+            </motion.div>
           </Link>
-        </div>
+        </motion.div>
       </motion.div>
 
-      <motion.div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-white/80 animate-bounce">
-        <ChevronDown size={32} />
+      <motion.div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 text-white/80"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 1.2, duration: 0.8 }}
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+        >
+          <ChevronDown size={32} />
+        </motion.div>
       </motion.div>
+
+      <SandwormAnimation sandwormY={sandwormY} />
     </section>
   );
 }
