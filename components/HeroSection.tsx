@@ -1,7 +1,9 @@
-// import SandwormAnimation from "@/components/SandwormAnimation";
+import SandwormAnimation from "@/components/SandwormAnimation";
 import { Button } from "@/components/ui/Button";
 import { motion, MotionValue } from "framer-motion";
 import { ChevronDown } from "lucide-react";
+import Image from "next/image";
+import Link from "next/link";
 
 interface HeroSectionProps {
   textY: MotionValue<number>;
@@ -12,13 +14,53 @@ interface HeroSectionProps {
 export default function HeroSection({
   textY,
   duneY,
+  sandwormY,
 }: // sandwormY,
 HeroSectionProps) {
   return (
-    <section className="h-screen relative overflow-hidden flex items-center justify-center">
-      {/* Background overlay */}
-      <div className="absolute inset-0 bg-black/40 z-10" />
+    <section className="h-screen relative overflow-hidden flex items-center justify-center ">
+      {/* Left Corner Logo */}
+      <Link
+        href="https://bmsit.ac.in"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <div className="absolute md:top-4 top-[5.8rem] left-4 z-30">
+          <Image
+            src="/images/bmsitfulllogo.png"
+            alt="BMSIT Logo"
+            width={70}
+            height={80}
+            className="h-16 md:h-20 w-auto transition-transform hover:scale-110"
+            priority
+            quality={100}
+            unoptimized
+          />
+        </div>
+      </Link>
 
+      {/* Right Corner Logos */}
+
+      <div className="absolute md:top-0 top-[5.2rem] right-0 md:right-6 z-30 flex items-center gap-3">
+        <Image
+          src="/images/anveshanalogo.png"
+          alt="Anveshana Logo"
+          width={100}
+          height={100}
+          className="h-16 md:h-20 w-auto transition-transform hover:scale-110"
+        />
+        <Image
+          src="/images/iiclogo.png"
+          alt="IIC Logo"
+          width={100}
+          height={100}
+          className="h-16 md:h-20 w-auto transition-transform hover:scale-110"
+        />
+      </div>
+
+      {/* Background overlay */}
+
+      <div className="absolute inset-0 bg-black/40 z-10" />
       {/* Dune background */}
       <motion.div
         className="absolute bottom-0 w-full h-[70vh] z-5"
@@ -43,11 +85,11 @@ HeroSectionProps) {
           }}
         />
       </motion.div>
-
       {/* Sandworm - placed directly in section */}
-      {/* <SandwormAnimation sandwormY={sandwormY} /> */}
+      <SandwormAnimation sandwormY={sandwormY} />
 
       {/* Content */}
+
       <motion.div
         className="relative z-20 text-center space-y-6 max-w-4xl mx-auto px-4"
         initial={{ opacity: 0, y: 20 }}
@@ -60,19 +102,28 @@ HeroSectionProps) {
           Fear is the mind-killer. Fear is the little-death that brings total
           obliteration.
         </p>
+
         <div className="flex gap-4 justify-center">
-          <Button
-            size="lg"
-            className="bg-orange-600 hover:bg-orange-700 text-white"
+          <Link
+            href="https://unstop.com/p/anveshana-bms-institute-of-technology-and-management-1350340?ref=x70LNhV5"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Register
-          </Button>
-          <Button
-            size="lg"
-            className="bg-white bg-opacity-40 text-gray-900 hover:bg-orange-600/20"
-          >
-            Learn More
-          </Button>
+            <Button
+              size="lg"
+              className="bg-orange-600 hover:bg-orange-700 text-white"
+            >
+              Register
+            </Button>
+          </Link>
+          <Link href="/about" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="bg-white bg-opacity-40 text-gray-900 hover:bg-orange-600/20"
+            >
+              Learn More
+            </Button>
+          </Link>
         </div>
       </motion.div>
 
