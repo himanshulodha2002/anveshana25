@@ -1,4 +1,4 @@
-import Header from "@/components/ui/header";
+import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import type { Metadata } from "next";
 import "../styles/globals.css";
