@@ -4,7 +4,6 @@ import CallToActionSection from "@/components/CallToActionSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import HeroSection from "@/components/HeroSection";
 import SandParticles from "@/components/SandParticles";
-import SandwormAnimation from "@/components/SandwormAnimation";
 import { useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -32,9 +31,8 @@ export default function DuneLanding() {
       ref={containerRef}
       className="min-h-[300vh] bg-gradient-to-b from-orange-900 via-orange-800 to-orange-950 relative overflow-hidden"
     >
-      <HeroSection textY={textY} duneY={duneY} />
+      <HeroSection textY={textY} duneY={duneY} sandwormY={sandwormY} />
       <FeaturesSection />
-      <SandwormAnimation sandwormY={sandwormY} />
       <CallToActionSection />
       <div className="fixed inset-0 pointer-events-none z-50">
         {mounted && <SandParticles />}
