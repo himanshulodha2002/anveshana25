@@ -57,8 +57,9 @@ HeroSectionProps) {
         }}
       />
 
-      {/* Logos with entrance animations */}
+      {/* Left Corner Logos */}
       <motion.div
+        className="absolute md:top-4 top-[5.8rem] left-4 z-30 flex items-center gap-4"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -68,19 +69,38 @@ HeroSectionProps) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <div className="absolute md:top-4 top-[5.8rem] left-4 z-30">
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
             <Image
-              src="/images/bmsitfulllogo.png"
+              src="/images/bmsitlogo.png"
               alt="BMSIT Logo"
               width={70}
-              height={80}
-              className="h-16 md:h-20 w-auto transition-transform hover:scale-110"
+              height={70}
+              className="h-16 md:h-20 w-auto"
               priority
               quality={100}
               unoptimized
             />
-          </div>
+          </motion.div>
         </Link>
+
+        <motion.div
+          whileHover={{ scale: 1.1 }}
+          transition={{ type: "spring", stiffness: 300 }}
+        >
+          <Image
+            src="/images/biceplogo.png"
+            alt="BICEP Logo"
+            width={70}
+            height={70}
+            className="h-16 md:h-20 w-auto"
+            priority
+            quality={100}
+            unoptimized
+          />
+        </motion.div>
       </motion.div>
 
       {/* Right Corner Logos with staggered entrance */}
@@ -111,7 +131,7 @@ HeroSectionProps) {
             alt="IIC Logo"
             width={100}
             height={100}
-            className="h-16 md:h-20 w-auto"
+            className="h-16 md:h-23 w-auto"
           />
         </motion.div>
       </motion.div>
