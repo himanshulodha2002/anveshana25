@@ -6,6 +6,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import HeroSection from "@/components/HeroSection";
 import PrizeSection from "@/components/PrizeSection";
 import SandParticles from "@/components/SandParticles";
+import TimelineSection from "@/components/Timeline";
 import { useScroll, useTransform } from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 
@@ -37,6 +38,7 @@ export default function DuneLanding() {
       <AboutEvent/>
       <FeaturesSection />
       <PrizeSection/>
+      <TimelineSection/>
       <CallToActionSection />
       <div className="fixed inset-0 pointer-events-none z-50">
         {mounted && <SandParticles />}
