@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import type { Metadata } from "next";
 import "../styles/globals.css";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Anveshana '25",
@@ -21,6 +22,7 @@ export default function RootLayout({
         <ActiveSectionContextProvider>
           <Header />
           {children}
+          <Footer />
         </ActiveSectionContextProvider>
       </body>
     </html>

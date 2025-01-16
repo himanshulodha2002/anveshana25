@@ -1,5 +1,5 @@
 import { Card } from "@/components/ui/Card";
-import { RoundCardProps } from "@/types/types";
+import { RoundCardProps } from "@/lib/types";
 import { motion } from "framer-motion";
 import { Calendar, Presentation, Cpu, ChevronRight} from 'lucide-react'
 import { FC } from "react";
@@ -57,9 +57,9 @@ const RoundCard: FC<RoundCardProps> =({ number, icon: Icon, title, date, descrip
 
           {/* Content */}
           <div>
-            <h3 className="text-xl font-semibold text-orange-100 mb-2">{title}</h3>
-            <p className="text-orange-200 font-medium mb-3">{date}</p>
-            <p className="text-orange-300">{description}</p>
+            <h3 className="text-xl font-semibold text-orange-100 mb-2 ">{title}</h3>
+            <p className="text-orange-200 font-medium mb-3 font-mono">{date}</p>
+            <p className="text-orange-300 font-mono">{description}</p>
           </div>
 
           {/* Hover Border Effect */}
@@ -73,7 +73,7 @@ const RoundCard: FC<RoundCardProps> =({ number, icon: Icon, title, date, descrip
 
 export default function FeaturesSection() {
   return (
-    <section className="min-h-screen relative z-30 bg-gradient-to-b from-orange-900/0 via-orange-950 to-orange-950 py-24">
+    <section className="min-h-screen relative z-30 bg-gradient-to-b from-orange-950 via-orange-900 to-orange-950 py-24">
       <div className="container mx-auto px-4">
 
       <div className="text-center mb-16">
