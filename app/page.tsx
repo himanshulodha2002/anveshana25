@@ -2,6 +2,7 @@
 
 import AboutEvent from "@/components/AboutTheEvent";
 import CallToActionSection from "@/components/CallToActionSection";
+import FaqSection from "@/components/Faq";
 import FeaturesSection from "@/components/FeaturesSection";
 import HeroSection from "@/components/HeroSection";
 import PrizeSection from "@/components/PrizeSection";
@@ -40,6 +41,7 @@ export default function DuneLanding() {
       <PrizeSection/>
       <TimelineSection/>
       <CallToActionSection />
+      <FaqSection/>
       <div className="fixed inset-0 pointer-events-none z-50">
         {mounted && <SandParticles />}
       </div>

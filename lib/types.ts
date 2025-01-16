@@ -17,3 +17,8 @@ export interface RoundCardProps {
   description: string;
   index: number;
 }
+
+
+export interface FaqSectionProps {
+  faqCount?: number; 
+}
