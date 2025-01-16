@@ -5,7 +5,7 @@ import { Card } from "@/components/ui/Card";
 
 export default function AboutEvent() {
   return (
-    <section className="min-h-screen relative z-30 bg-gradient-to-b from-orange-950 to-orange-950 py-24">
+    <section className="min-h-screen relative z-30 bg-gradient-to-b from-orange-950 via-orange-900 to-orange-950 py-24">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 20 }}

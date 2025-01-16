@@ -34,10 +34,10 @@ export const Card = React.memo(
         />
       </div>
       {/* Title and Subtitle */}
-      <div className="text-lg font-semibold text-gray-900 dark:text-neutral-100">
+      <div className="text-lg font-semibold text-white font-mono">
         {card.title}
       </div>
-      <div className="text-sm text-gray-600 dark:text-neutral-400">
+      <div className="text-sm text-white dark:text-neutral-400 font-mono">
         {card.subtitle}
       </div>
     </div>
