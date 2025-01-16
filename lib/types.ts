@@ -6,3 +6,9 @@ export type CardType = {
   title: string;
   src: string;
 };
+
+export type CardType2 = {
+  title: string;
+  subtitle: string;
+  src: string;
+};
