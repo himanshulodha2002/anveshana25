@@ -21,4 +21,5 @@ export interface RoundCardProps {
 
 export interface FaqSectionProps {
   faqCount?: number; 
+  isVisible?: boolean;
 }
