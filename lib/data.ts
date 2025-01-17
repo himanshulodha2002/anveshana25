@@ -1,4 +1,6 @@
+import noimage from "@/public/images/team/image.png";
 import opsteamhead from "@/public/images/team/opsteamhead.jpg";
+import techteamhead from "@/public/images/team/techteamhead.png";
 import { Calendar, ClipboardList, Cpu, Presentation } from "lucide-react";
 
 export const links = [
@@ -125,22 +127,21 @@ export const timelineEvents = [
   },
 ] as const;
 
-// lib/teamData.ts
 export const teamCards = [
   {
     title: "S Meghana",
     subtitle: "President",
-    src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: noimage,
   },
   {
     title: "Anagha",
     subtitle: "Vice-President",
-    src: "https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: noimage,
   },
   {
     title: "Harsha Patil",
     subtitle: "OPS Team",
-    src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: noimage,
   },
   {
     title: "Swatantra",
@@ -150,21 +151,21 @@ export const teamCards = [
   {
     title: "Harshita",
     subtitle: "Design Team",
-    src: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: noimage,
   },
   {
     title: "Ankitha",
     subtitle: "Content Team",
-    src: "https://assets.aceternity.com/the-first-rule.png",
+    src: noimage,
   },
   {
     title: "Himanshu ",
     subtitle: "Technical Team",
-    src: "https://assets.aceternity.com/the-first-rule.png",
+    src: techteamhead,
   },
   {
     title: "Srisha",
     subtitle: "Marketing Team",
-    src: "https://assets.aceternity.com/the-first-rule.png",
+    src: noimage,
   },
 ] as const;
