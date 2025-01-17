@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 interface HeroSectionProps {
   textY: MotionValue<number>;
   duneY: MotionValue<number>;
-  sandwormY: MotionValue<number>;
 }
 
 export default function HeroSection({

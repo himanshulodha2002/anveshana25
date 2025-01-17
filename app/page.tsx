@@ -24,9 +24,9 @@ export default function DuneLanding() {
     setMounted(true);
   }, []);
 
-  const sandwormY = useTransform(scrollYProgress, [0, 1], [1000, -100]);
+  // const sandwormY = useTransform(scrollYProgress, [0, 1], [1000, -100]);
   const duneY = useTransform(scrollYProgress, [0, 1], [0, 300]);
-  const textY = useTransform(scrollYProgress, [0, 0.5, 1], [0, 50, 200]);
+  const textY = useTransform(scrollYProgress, [0, 0.2, 1], [0, 50, 200]);
 
   if (!mounted) return null;
 
@@ -35,7 +35,7 @@ export default function DuneLanding() {
       ref={containerRef}
       className="min-h-[300vh] bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 relative overflow-hidden"
     >
-      <HeroSection textY={textY} duneY={duneY} sandwormY={sandwormY} />
+      <HeroSection textY={textY} duneY={duneY} />
       <AboutEvent />
       <FeaturesSection />
       <PrizeSection />
