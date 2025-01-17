@@ -26,6 +26,8 @@ export default function Footer() {
                 <li key={index} className="flex justify-center">
                   <a
                     href={link.href}
+                    target={link.target}
+                    rel={link.rel}
                     className="text-orange-300 hover:text-orange-200 transition-colors flex items-center gap-3 group"
                   >
                     <ExternalLink className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -130,9 +132,15 @@ const quickLinks = [
   {
     label: "Register Now",
     href: "https://unstop.com/p/anveshana-bms-institute-of-technology-and-management-1350340?ref=x70LNhV5",
+    target: "_blank",
+    rel: "noopener noreferrer",
   },
-  { label: "About Event", href: "#about" },
+  {
+    label: "Event Brochure",
+    href: "/brochure.pdf",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
   { label: "Schedule", href: "/timeline" },
-  // { label: "Rules & Guidelines", href: "#rules" },
   { label: "FAQs", href: "/faq" },
 ];

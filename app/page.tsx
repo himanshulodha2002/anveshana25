@@ -24,7 +24,6 @@ export default function DuneLanding() {
     setMounted(true);
   }, []);
 
-  // const sandwormY = useTransform(scrollYProgress, [0, 1], [1000, -100]);
   const duneY = useTransform(scrollYProgress, [0, 1], [0, 300]);
   const textY = useTransform(scrollYProgress, [0, 0.2, 1], [0, 50, 200]);
 

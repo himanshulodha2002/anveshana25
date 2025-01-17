@@ -1,7 +1,13 @@
 import { StaticImageData } from "next/image";
-import { links } from "./data";
+// import { links } from "./data";
 
-export type SectionName = (typeof links)[number]["name"];
+export type SectionName =
+  | "Home"
+  | "Timeline"
+  | "Gallery"
+  | "Contact"
+  | "FAQ"
+  | "Our Team";
 
 export type CardType = {
   title: string;

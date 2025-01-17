@@ -1,8 +1,10 @@
+import contentteamhead from "@/public/images/team/contentteamhead.jpg";
 import enentsteamhead from "@/public/images/team/eventsteamhead.jpg";
 import noimage from "@/public/images/team/image.png";
 import opsteamhead from "@/public/images/team/opsteamhead.jpg";
 import president from "@/public/images/team/president.jpg";
 import techteamhead from "@/public/images/team/techteamhead.png";
+import viceprecident from "@/public/images/team/viceprecident.jpg";
 import { Calendar, ClipboardList, Cpu, Presentation } from "lucide-react";
 
 export const links = [
@@ -19,7 +21,7 @@ export const links = [
     hash: "/gallery",
   },
   {
-    name: "Team",
+    name: "Our Team",
     hash: "/team",
   },
   {
@@ -57,9 +59,14 @@ export const cards = [
 
 export const faqs = [
   {
+    question: "What is the Anveshana Prototype Competition?",
+    answer:
+      "The Anveshana Prototype Competition is an innovation-driven event designed to encourage students and aspiring innovators to transform their ideas into tangible prototypes. Participants showcase their creativity, problem-solving skills, and technical expertise by addressing real-world challenges through innovative solutions. It's an opportunity to collaborate, learn, and compete with the best minds.",
+  },
+  {
     question: "Who can participate in the competition?",
     answer:
-      "The competition is open to all currently studying undergraduate and postgraduate students across institutes in India. Teams can comprise of up to 4 members from the same college, and can include interdisciplinary and cross-year students.",
+      "The competition is open to all currently studying undergraduate and postgraduate students across institutes in India. Teams can comprise up to 4 members from the same college, and can include interdisciplinary and cross-year students.",
   },
   {
     question: "Is there a registration fee?",
@@ -95,6 +102,62 @@ export const faqs = [
     question: "What happens if I miss the registration deadline?",
     answer:
       "Late applications will not be accepted. All registrations must be completed before the specified deadline to be considered for the competition.",
+  },
+  {
+    question: "Can I change my team members after registering?",
+    answer:
+      "Yes, you can change team members before the registration deadline. After the deadline, team compositions are locked to ensure fairness in the competition.",
+  },
+  {
+    question: "Does my prototype need to be fully functional?",
+    answer:
+      "No, a fully functional prototype is not mandatory. Partially functional or conceptual prototypes are acceptable as long as they effectively communicate the idea and its potential impact.",
+  },
+  {
+    question: "What happens if a team member drops out?",
+    answer:
+      "If a team member drops out, the team can continue with the remaining members. However, replacements are not allowed after the registration deadline.",
+  },
+  {
+    question: "Do I need prior experience to participate?",
+    answer:
+      "No prior experience is required. The competition is open to participants of all skill levels, including beginners and experts.",
+  },
+  {
+    question:
+      "Can I register if I have already participated in similar competitions?",
+    answer:
+      "Yes, you can register even if you’ve participated in similar competitions. However, the prototype submitted must be original and adhere to the competition guidelines.",
+  },
+  {
+    question: "Can I submit multiple prototypes?",
+    answer:
+      "No, each team or individual is allowed to submit only one prototype to ensure fair participation.",
+  },
+  {
+    question: "Can I withdraw the registration?",
+    answer:
+      "Yes, you can withdraw your registration anytime before the competition begins. Please notify the organizers to officially withdraw.",
+  },
+  {
+    question: "How many people can be on a team?",
+    answer:
+      "Teams can have up to 4 members. We recommend forming teams with diverse skill sets to maximize creativity and productivity.",
+  },
+  {
+    question: "Do we need to build a complete product?",
+    answer:
+      "No, a functional prototype that demonstrates your concept and core features is sufficient. Focus on showcasing how your solution addresses the problem statement.",
+  },
+  {
+    question: "Is it remote or on-site?",
+    answer:
+      "The competition is a hybrid event. Initial rounds will be conducted virtually, while the final round will take place on-site at the designated venue.",
+  },
+  {
+    question: "Are travel expenses included?",
+    answer:
+      "No, travel expenses are not included. Participants are responsible for their own travel and accommodation arrangements for the on-site round.",
   },
 ] as const;
 
@@ -138,7 +201,7 @@ export const teamCards = [
   {
     title: "Anagha",
     subtitle: "Vice-President",
-    src: noimage,
+    src: viceprecident,
   },
   {
     title: "Harsha Patil",
@@ -158,7 +221,7 @@ export const teamCards = [
   {
     title: "Ankitha",
     subtitle: "Content Team",
-    src: noimage,
+    src: contentteamhead,
   },
   {
     title: "Himanshu ",

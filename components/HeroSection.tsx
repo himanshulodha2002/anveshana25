@@ -10,11 +10,7 @@ interface HeroSectionProps {
   duneY: MotionValue<number>;
 }
 
-export default function HeroSection({
-  textY,
-  duneY,
-}: // sandwormY,
-HeroSectionProps) {
+export default function HeroSection({ textY, duneY }: HeroSectionProps) {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -57,7 +53,7 @@ HeroSectionProps) {
 
       {/* Left Corner Logos */}
       <motion.div
-        className="absolute md:top-4 top-[5.8rem] left-4 z-30 flex items-center gap-4"
+        className="absolute top-4 left-4 md:top-4 md:left-4 z-[999] flex items-center gap-4"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.2 }}
@@ -76,7 +72,7 @@ HeroSectionProps) {
               alt="BMSIT Logo"
               width={70}
               height={70}
-              className="h-16 md:h-20 w-auto"
+              className="h-12 md:h-20 w-auto" // Adjusted height for mobile
               priority
               quality={100}
               unoptimized
@@ -93,7 +89,7 @@ HeroSectionProps) {
             alt="BICEP Logo"
             width={70}
             height={70}
-            className="h-16 md:h-20 w-auto"
+            className="h-12 md:h-20 w-auto" // Adjusted height for mobile
             priority
             quality={100}
             unoptimized
@@ -103,7 +99,8 @@ HeroSectionProps) {
 
       {/* Right Corner Logos with staggered entrance */}
       <motion.div
-        className="absolute md:top-0 top-[5.2rem] right-0 md:right-6 z-30 flex items-center gap-3"
+        // Move to left for mobile; keep right for desktop
+        className="absolute top-4 left-[9rem] md:top-4 md:right-6 md:left-auto z-[999] flex items-center gap-4"
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
         transition={{ duration: 0.8, delay: 0.4 }}
@@ -117,7 +114,7 @@ HeroSectionProps) {
             alt="Anveshana Logo"
             width={100}
             height={100}
-            className="h-16 md:h-20 w-auto"
+            className="h-12 md:h-20 w-auto" // Adjusted height for mobile
           />
         </motion.div>
         <motion.div
@@ -129,7 +126,7 @@ HeroSectionProps) {
             alt="IIC Logo"
             width={100}
             height={100}
-            className="h-16 md:h-23 w-auto"
+            className="h-12 md:h-23 w-auto" // Adjusted height for mobile
           />
         </motion.div>
       </motion.div>
@@ -232,7 +229,7 @@ HeroSectionProps) {
 
       {/* Enhanced content animations */}
       <motion.div
-        className="relative z-20 text-center space-y-8 max-w-4xl mx-auto px-4 mt-20 md:mt-24"
+        className="relative z-20 text-center space-y-8 max-w-4xl mx-auto px-4 mt-36 md:mt-24"
         style={{ y: textY }}
       >
         <motion.h1
@@ -268,7 +265,7 @@ HeroSectionProps) {
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
-                className="bg-orange-600 hover:bg-orange-700 text-white"
+                className="bg-orange-600/80 hover:bg-orange-700 text-white"
               >
                 Register
               </Button>

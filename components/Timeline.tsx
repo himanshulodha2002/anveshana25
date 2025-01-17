@@ -24,9 +24,9 @@ export default function TimelineSection() {
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl font-bold text-orange-100 text-center mb-12 flex items-center justify-center gap-2">
+          <h1 className="text-3xl font-bold text-orange-100 text-center mt-4 mb-12 flex items-center justify-center gap-2">
             Timeline
-          </h3>
+          </h1>
           <p className="text-orange-300 max-w-2xl mx-auto text-lg font-mono">
             Follow the path from proposal to prototype in our three-stage
             competition

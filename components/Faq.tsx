@@ -17,7 +17,7 @@ export default function FaqSection({
   isVisible = true,
 }: FaqSectionProps) {
   return (
-    <section className="relative bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 py-24">
+    <section className="relative bg-gradient-to-b from-orange-950 via-orange-900 to-orange-950 py-24">
       {/* Background Pattern */}
       <div
         className="absolute inset-0 bg-grid-white/[0.02] -z-10"
@@ -35,7 +35,7 @@ export default function FaqSection({
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
         >
-          <h3 className="text-3xl font-bold text-orange-100 text-center mb-12 flex items-center justify-center gap-2">
+          <h3 className="text-3xl font-bold text-orange-100 text-center mb-12 mt-8 flex items-center justify-center gap-2">
             Frequently Asked Questions
           </h3>
           {/* <p className="text-orange-300 max-w-2xl mx-auto text-lg font-mono">
