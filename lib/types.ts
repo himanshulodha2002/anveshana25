@@ -1,5 +1,4 @@
 import { StaticImageData } from "next/image";
-// import { links } from "./data";
 
 export type SectionName =
   | "Home"
@@ -10,13 +9,9 @@ export type SectionName =
   | "Our Team";
 
 export type CardType = {
-  title: string;
-  src: string;
-};
-export type CardType2 = {
-  title: string;
-  src: StaticImageData;
-  subtitle: string;
+  title?: string;
+  src: string | StaticImageData;
+  subtitle?: string;
 };
 
 export interface RoundCardProps {

@@ -1,5 +1,5 @@
 "use client";
-import { CardType2 } from "@/lib/types";
+import { CardType } from "@/lib/types";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import React, { useState } from "react";
@@ -11,7 +11,7 @@ export const Card = React.memo(
     hovered,
     setHovered,
   }: {
-    card: CardType2;
+    card: CardType;
     index: number;
     hovered: number | null;
     setHovered: React.Dispatch<React.SetStateAction<number | null>>;
@@ -28,7 +28,7 @@ export const Card = React.memo(
       <div className="relative w-32 h-32 rounded-full overflow-hidden bg-gray-200">
         <Image
           src={card.src}
-          alt={card.title}
+          alt={card.title ?? "Image"}
           fill
           className="object-cover"
         />
@@ -46,7 +46,7 @@ export const Card = React.memo(
 
 Card.displayName = "Card";
 
-export function FocusCards({ cards }: { cards: readonly CardType2[] }) {
+export function FocusCards({ cards }: { cards: readonly CardType[] }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (

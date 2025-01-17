@@ -32,28 +32,64 @@ export const links = [
 
 export const cards = [
   {
-    title: "Forest Adventure",
-    src: "https://images.unsplash.com/photo-1518710843675-2540dd79065c?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/Gallery/1.jpg",
   },
   {
-    title: "Valley of life",
-    src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/Gallery/2.jpg",
   },
   {
-    title: "Something ",
-    src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/Gallery/3.jpg",
   },
   {
-    title: "Camping is for pros",
-    src: "https://images.unsplash.com/photo-1486915309851-b0cc1f8a0084?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/Gallery/4.jpg",
   },
   {
-    title: "The road not taken",
-    src: "https://images.unsplash.com/photo-1507041957456-9c397ce39c97?q=80&w=3456&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    src: "/images/Gallery/5.jpg",
   },
   {
-    title: "The First Rule",
-    src: "https://assets.aceternity.com/the-first-rule.png",
+    src: "/images/Gallery/6.jpg",
+  },
+  {
+    src: "/images/Gallery/7.jpg",
+  },
+  {
+    src: "/images/Gallery/8.jpg",
+  },
+  {
+    src: "/images/Gallery/9.jpg",
+  },
+  {
+    src: "/images/Gallery/10.jpg",
+  },
+  {
+    src: "/images/Gallery/11.jpg",
+  },
+  {
+    src: "/images/Gallery/12.jpg",
+  },
+  // {
+  //   src: "/images/Gallery/13.jpg",
+  // },
+  // {
+  //   src: "/images/Gallery/14.jpg",
+  // },
+  {
+    src: "/images/Gallery/15.jpg",
+  },
+  {
+    src: "/images/Gallery/16.jpg",
+  },
+  {
+    src: "/images/Gallery/17.jpg",
+  },
+  {
+    src: "/images/Gallery/18.jpg",
+  },
+  {
+    src: "/images/Gallery/19.jpg",
+  },
+  {
+    src: "/images/Gallery/20.jpg",
   },
 ] as const;
 
