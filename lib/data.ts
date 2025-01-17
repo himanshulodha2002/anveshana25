@@ -265,6 +265,7 @@ export const teamCards = [
     subtitle: "Technical Team",
     src: techteamhead,
     linkedin: "https://www.linkedin.com/in/himanshu2002/",
+    email: "lodhahimanshu2002@gmail.com",
   },
   {
     title: "Srisha",

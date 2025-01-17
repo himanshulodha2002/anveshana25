@@ -14,6 +14,7 @@ export type CardType = {
   subtitle?: string;
   linkedin?: string;
   instagram?: string;
+  email?: string;
 };
 
 export interface RoundCardProps {
