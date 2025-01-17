@@ -26,7 +26,7 @@ export default function DuneLanding() {
 
   const sandwormY = useTransform(scrollYProgress, [0, 1], [1000, -100]);
   const duneY = useTransform(scrollYProgress, [0, 1], [0, 300]);
-  const textY = useTransform(scrollYProgress, [0, 0.2, 1], [0, 50, 200]);
+  const textY = useTransform(scrollYProgress, [0, 0.5, 1], [0, 50, 200]);
 
   if (!mounted) return null;
 
