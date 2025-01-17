@@ -1,5 +1,7 @@
+import enentsteamhead from "@/public/images/team/eventsteamhead.jpg";
 import noimage from "@/public/images/team/image.png";
 import opsteamhead from "@/public/images/team/opsteamhead.jpg";
+import president from "@/public/images/team/president.jpg";
 import techteamhead from "@/public/images/team/techteamhead.png";
 import { Calendar, ClipboardList, Cpu, Presentation } from "lucide-react";
 
@@ -36,7 +38,7 @@ export const cards = [
     src: "https://images.unsplash.com/photo-1600271772470-bd22a42787b3?q=80&w=3072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    title: "Sala behta hi jayega",
+    title: "Something ",
     src: "https://images.unsplash.com/photo-1505142468610-359e7d316be0?q=80&w=3070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
@@ -131,7 +133,7 @@ export const teamCards = [
   {
     title: "S Meghana",
     subtitle: "President",
-    src: noimage,
+    src: president,
   },
   {
     title: "Anagha",
@@ -141,12 +143,12 @@ export const teamCards = [
   {
     title: "Harsha Patil",
     subtitle: "OPS Team",
-    src: noimage,
+    src: opsteamhead,
   },
   {
     title: "Swatantra",
     subtitle: "Events Team",
-    src: opsteamhead,
+    src: enentsteamhead,
   },
   {
     title: "Harshita",

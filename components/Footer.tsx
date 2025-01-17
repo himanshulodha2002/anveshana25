@@ -1,8 +1,8 @@
-'use client'
+"use client";
 
-import { motion } from "framer-motion"
-import { Heart, Mail, Phone, MapPin, ExternalLink } from 'lucide-react'
-import { Card } from "./ui/Card"
+import { motion } from "framer-motion";
+import { ExternalLink, Heart, Mail, MapPin, Phone } from "lucide-react";
+import { Card } from "./ui/Card";
 
 export default function Footer() {
   return (
@@ -18,11 +18,13 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex flex-col items-center text-center"
           >
-            <h4 className="text-2xl font-semibold text-orange-100 mb-6">Quick Links</h4>
+            <h4 className="text-2xl font-semibold text-orange-100 mb-6">
+              Quick Links
+            </h4>
             <ul className="space-y-4 inline-block">
               {quickLinks.map((link, index) => (
                 <li key={index} className="flex justify-center">
-                  <a 
+                  <a
                     href={link.href}
                     className="text-orange-300 hover:text-orange-200 transition-colors flex items-center gap-3 group"
                   >
@@ -42,14 +44,17 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex flex-col items-center text-center"
           >
-            <h4 className="text-2xl font-semibold text-orange-100 mb-6">About College</h4>
+            <h4 className="text-2xl font-semibold text-orange-100 mb-6">
+              About College
+            </h4>
             <Card className="bg-orange-900/20 border-orange-500/20 p-6">
               <div className="space-y-4">
                 <h5 className="text-orange-100 font-semibold text-lg">
                   BMS Institute of Technology & Management
                 </h5>
                 <p className="text-orange-300">
-                  Avalahalli, Doddaballapur Main Road, Bengaluru, Karnataka 560064
+                  Avalahalli, Doddaballapur Main Road, Bengaluru, Karnataka
+                  560064
                 </p>
               </div>
             </Card>
@@ -63,10 +68,12 @@ export default function Footer() {
             viewport={{ once: true }}
             className="flex flex-col items-center text-center"
           >
-            <h4 className="text-2xl font-semibold text-orange-100 mb-6">Contact Us</h4>
+            <h4 className="text-2xl font-semibold text-orange-100 mb-6">
+              Contact Us
+            </h4>
             <ul className="space-y-6">
               <li className="flex justify-center">
-                <a 
+                <a
                   href="mailto:bicep@bmsit.in"
                   className="text-orange-300 hover:text-orange-200 transition-colors flex items-center gap-3"
                 >
@@ -75,20 +82,19 @@ export default function Footer() {
                 </a>
               </li>
               <li className="flex justify-center">
-                <a 
+                <a
                   href="tel:+918861201994"
                   className="text-orange-300 hover:text-orange-200 transition-colors flex items-center gap-3"
                 >
                   <Phone className="h-5 w-5 text-orange-400" />
-                  +91 886 120 1994
+                  +91 96635 32603
                 </a>
               </li>
               <li className="flex justify-center">
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-orange-400 flex-shrink-0 mt-1" />
                   <span className="text-orange-300">
-                    BICEP, First Floor, Library Building
-                    BMSIT&M Campus
+                    BICEP, First Floor, Lab Block BMSIT&M Campus
                   </span>
                 </div>
               </li>
@@ -100,28 +106,33 @@ export default function Footer() {
       {/* Copyright Section */}
       <div className="border-t border-orange-500/20 bg-orange-950/50">
         <div className="container mx-auto px-8 py-6">
-          <motion.p 
+          <motion.p
             className="text-center text-orange-300 text-base flex items-center justify-center gap-2"
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.6 }}
             viewport={{ once: true }}
           >
-            Made with 
-            <Heart className="h-4 w-4 text-orange-500 animate-pulse" fill="currentColor" /> 
+            Made with
+            <Heart
+              className="h-4 w-4 text-orange-500 animate-pulse"
+              fill="currentColor"
+            />
             by IIC BMSIT&M
           </motion.p>
         </div>
       </div>
     </footer>
-  )
+  );
 }
 
 const quickLinks = [
-  { label: 'Register Now', href: '#register' },
-  { label: 'About Event', href: '#about' },
-  { label: 'Schedule', href: '#schedule' },
-  { label: 'Rules & Guidelines', href: '#rules' },
-  { label: 'FAQs', href: '#faqs' },
-]
-
+  {
+    label: "Register Now",
+    href: "https://unstop.com/p/anveshana-bms-institute-of-technology-and-management-1350340?ref=x70LNhV5",
+  },
+  { label: "About Event", href: "#about" },
+  { label: "Schedule", href: "/timeline" },
+  // { label: "Rules & Guidelines", href: "#rules" },
+  { label: "FAQs", href: "/faq" },
+];
