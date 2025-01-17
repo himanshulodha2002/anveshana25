@@ -275,13 +275,13 @@ HeroSectionProps) {
               </Button>
             </motion.div>
           </Link>
-          <Link href="/about" target="_blank" rel="noopener noreferrer">
+          <Link href="/brochure.pdf" target="_blank" rel="noopener noreferrer">
             <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
               <Button
                 size="lg"
                 className="bg-white bg-opacity-40 text-gray-900 hover:bg-orange-600/20"
               >
-                Learn More
+                Brochure
               </Button>
             </motion.div>
           </Link>
