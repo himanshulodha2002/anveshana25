@@ -1,6 +1,7 @@
 import contentteamhead from "@/public/images/team/contentteamhead.jpg";
 import enentsteamhead from "@/public/images/team/eventsteamhead.jpg";
 import noimage from "@/public/images/team/image.png";
+import marketteamhead from "@/public/images/team/marketteamhead.jpg";
 import opsteamhead from "@/public/images/team/opsteamhead.jpg";
 import president from "@/public/images/team/president.jpg";
 import techteamhead from "@/public/images/team/techteamhead.png";
@@ -267,7 +268,7 @@ export const teamCards = [
   {
     title: "Srisha",
     subtitle: "Marketing Team",
-    src: noimage,
+    src: marketteamhead,
   },
 ] as const;
 
