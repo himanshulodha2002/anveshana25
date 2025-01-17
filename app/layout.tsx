@@ -1,8 +1,8 @@
+import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
 import type { Metadata } from "next";
 import "../styles/globals.css";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Anveshana '25",
@@ -17,6 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
+      // className="bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950"
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <ActiveSectionContextProvider>

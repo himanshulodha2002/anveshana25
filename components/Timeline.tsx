@@ -2,11 +2,12 @@
 
 import { Card } from "@/components/ui/Card";
 import { timelineEvents } from "@/lib/data";
+import clsx from "clsx";
 import { motion } from "framer-motion";
 
 export default function TimelineSection() {
   return (
-    <section className="relative min-h-screen bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 py-24">
+    <section className="relative bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 py-16 md:py-24 -mb-1">
       {/* Background Pattern */}
       <div
         className="absolute inset-0 bg-grid-white/[0.02] -z-10"
@@ -36,24 +37,47 @@ export default function TimelineSection() {
         {/* Timeline */}
         <div className="max-w-5xl mx-auto relative">
           {/* Central Timeline Line */}
-          <div className="absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-orange-600/40 via-orange-500/60 to-orange-600/40 transform -translate-x-1/2 z-20" />
+          <div className="absolute h-full w-1 bg-gradient-to-b from-orange-600/40 via-orange-500/60 to-orange-600/40 left-[1.65rem] md:left-1/2 md:-translate-x-1/2 top-0" />
 
           {timelineEvents.map((event, index) => (
             <motion.div
               key={index}
-              initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+              initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
               viewport={{ once: true }}
-              className="relative mb-16 last:mb-0"
+              className="relative mb-16 last:mb-0 pl-16 md:pl-0"
             >
               <div
-                className={`flex items-center gap-8 ${
-                  index % 2 === 0 ? "flex-row" : "flex-row-reverse"
-                }`}
+                className={clsx(
+                  "flex items-center gap-8",
+                  "md:justify-between",
+                  index % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"
+                )}
               >
+                {/* Timeline Node */}
+                <div className="absolute left-[0.85rem] md:left-1/2 top-1/2 -translate-y-1/2 md:-translate-x-1/2 z-30">
+                  <div className="w-8 h-8 bg-orange-950 rounded-full border-4 border-orange-500 shadow-lg shadow-orange-900" />
+                  <div
+                    className={clsx(
+                      "absolute top-1/2 -translate-y-1/2 h-0.5 bg-orange-500/50 -z-[999]",
+                      "w-8 left-full", // Mobile
+                      "md:w-12", // Desktop
+                      index % 2 === 0 ? "md:-left-full" : "md:-right-full"
+                    )}
+                  />
+                </div>
+
                 {/* Content Card */}
-                <Card className="flex-1 bg-orange-900/40 border-orange-500/20 p-6 backdrop-blur-sm relative group hover:bg-orange-900/60 transition-colors duration-300 font-mono">
+                <Card
+                  className={clsx(
+                    "flex-1",
+                    "md:max-w-[calc(50%-3rem)]",
+                    "bg-orange-900/40 border-orange-500/20 p-6",
+                    "backdrop-blur-sm relative group hover:bg-orange-900/60",
+                    "transition-colors duration-300 font-mono"
+                  )}
+                >
                   <div className="absolute inset-0 bg-gradient-to-r from-orange-600/10 to-transparent rounded-lg" />
                   <div className="relative">
                     <div className="flex items-center gap-4 mb-4">
@@ -70,20 +94,6 @@ export default function TimelineSection() {
                     <p className="text-orange-200">{event.description}</p>
                   </div>
                 </Card>
-
-                {/* Empty space for alignment */}
-                <div className="flex-1" />
-
-                {/* Timeline Node */}
-                <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex items-center justify-center z-30">
-                  <div className="w-8 h-8 bg-orange-950 rounded-full border-4 border-orange-500 z-10 shadow-lg shadow-orange-900" />
-                  {/* Horizontal Connector */}
-                  <div
-                    className={`absolute h-0.5 bg-orange-500/50 w-12 ${
-                      index % 2 === 0 ? "-left-12" : "-right-12"
-                    }`}
-                  />
-                </div>
               </div>
             </motion.div>
           ))}
