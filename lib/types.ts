@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { links } from "./data";
 
 export type SectionName = (typeof links)[number]["name"];
@@ -8,7 +9,7 @@ export type CardType = {
 };
 export type CardType2 = {
   title: string;
-  src: string;
+  src: StaticImageData;
   subtitle: string;
 };
 
@@ -21,8 +22,7 @@ export interface RoundCardProps {
   index: number;
 }
 
-
 export interface FaqSectionProps {
-  faqCount?: number; 
+  faqCount?: number;
   isVisible?: boolean;
 }
