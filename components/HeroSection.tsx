@@ -1,16 +1,11 @@
 import { Button } from "@/components/ui/Button";
-import { motion, MotionValue } from "framer-motion";
+import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { useEffect, useState } from "react";
 
-interface HeroSectionProps {
-  textY: MotionValue<number>;
-  duneY: MotionValue<number>;
-}
-
-export default function HeroSection({ textY, duneY }: HeroSectionProps) {
+export default function HeroSection() {
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
@@ -138,10 +133,7 @@ export default function HeroSection({ textY, duneY }: HeroSectionProps) {
         animate={{ opacity: 0.4 }}
         transition={{ duration: 1 }}
       />
-      <motion.div
-        className="absolute bottom-0 w-full h-[70vh] z-5 overflow-hidden"
-        style={{ y: duneY }}
-      >
+      <motion.div className="absolute bottom-0 w-full h-[70vh] z-5 overflow-hidden">
         {/* First wave layer */}
         <motion.div
           className="absolute bottom-0 w-[400vw] h-[60vh] z-[1]"
@@ -228,10 +220,7 @@ export default function HeroSection({ textY, duneY }: HeroSectionProps) {
       </motion.div>
 
       {/* Enhanced content animations */}
-      <motion.div
-        className="relative z-20 text-center space-y-8 max-w-4xl mx-auto px-4 mt-36 md:mt-24"
-        style={{ y: textY }}
-      >
+      <motion.div className="relative z-20 text-center space-y-8 max-w-4xl mx-auto px-4 mt-36 md:mt-20">
         <motion.h1
           className="text-4xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-400 [text-shadow:_0_2px_20px_rgb(251_146_60_/_20%)]"
           initial={{ opacity: 0, y: 20 }}
@@ -297,8 +286,6 @@ export default function HeroSection({ textY, duneY }: HeroSectionProps) {
           <ChevronDown size={32} />
         </motion.div>
       </motion.div>
-
-      {/* <SandwormAnimation sandwormY={sandwormY} /> */}
     </section>
   );
 }

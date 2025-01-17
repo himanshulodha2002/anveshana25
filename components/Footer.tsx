@@ -85,11 +85,20 @@ export default function Footer() {
               </li>
               <li className="flex justify-center">
                 <a
-                  href="tel:+918861201994"
+                  href="tel:+919663532603"
                   className="text-orange-300 hover:text-orange-200 transition-colors flex items-center gap-3"
                 >
                   <Phone className="h-5 w-5 text-orange-400" />
                   +91 96635 32603
+                </a>
+              </li>
+              <li className="flex justify-center">
+                <a
+                  href="tel:+918088843942"
+                  className="text-orange-300 hover:text-orange-200 transition-colors flex items-center gap-3"
+                >
+                  <Phone className="h-5 w-5 text-orange-400" />
+                  +91 80888 43942
                 </a>
               </li>
               <li className="flex justify-center">
