@@ -264,11 +264,13 @@ export const teamCards = [
     title: "Himanshu ",
     subtitle: "Technical Team",
     src: techteamhead,
+    linkedin: "https://www.linkedin.com/in/himanshu2002/",
   },
   {
     title: "Srisha",
     subtitle: "Marketing Team",
     src: marketteamhead,
+    linkedin: "https://www.linkedin.com/in/srisha-ks-5a5050329/",
   },
 ] as const;
 

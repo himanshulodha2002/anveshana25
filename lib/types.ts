@@ -9,9 +9,11 @@ export type SectionName =
   | "Our Team";
 
 export type CardType = {
-  title?: string;
   src: string | StaticImageData;
+  title?: string;
   subtitle?: string;
+  linkedin?: string;
+  instagram?: string;
 };
 
 export interface RoundCardProps {
