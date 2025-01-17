@@ -1,7 +1,7 @@
 "use client";
 import SandParticles from "@/components/SandParticles";
 import { FocusCards } from "@/components/ui/focus-cards-teams";
-import { teamCards } from "@/lib/teamData";
+import { teamCards } from "@/lib/data";
 
 export default function Team() {
   return (

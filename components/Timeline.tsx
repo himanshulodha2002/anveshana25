@@ -1,8 +1,8 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { Card } from "@/components/ui/Card";
-import { Calendar, Presentation, Cpu } from "lucide-react";
+import { timelineEvents } from "@/lib/data";
+import { motion } from "framer-motion";
 
 export default function TimelineSection() {
   return (
@@ -92,27 +92,3 @@ export default function TimelineSection() {
     </section>
   );
 }
-
-const timelineEvents = [
-  {
-    icon: Calendar,
-    title: "Round 1: Proposal Evaluation",
-    date: "February 2025",
-    description:
-      "Submit your innovative prototype proposal for initial evaluation. Top proposals will be selected for the next round.",
-  },
-  {
-    icon: Presentation,
-    title: "Round 2: Virtual Presentation",
-    date: "March 2025",
-    description:
-      "Present your concept virtually to our expert panel. Demonstrate the potential impact and feasibility of your prototype.",
-  },
-  {
-    icon: Cpu,
-    title: "Round 3: Final Prototype",
-    date: "March 28, 2025",
-    description:
-      "Showcase your working prototype at BMSIT&M Campus. Compete for exciting prizes and recognition.",
-  },
-];

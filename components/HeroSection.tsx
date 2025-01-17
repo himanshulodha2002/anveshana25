@@ -238,7 +238,7 @@ HeroSectionProps) {
         style={{ y: textY }}
       >
         <motion.h1
-          className="text-4xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-200 to-orange-400 [text-shadow:_0_2px_20px_rgb(251_146_60_/_20%)]"
+          className="text-4xl lg:text-7xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-300 to-orange-400 [text-shadow:_0_2px_20px_rgb(251_146_60_/_20%)]"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}

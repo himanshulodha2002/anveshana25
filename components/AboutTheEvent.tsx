@@ -1,7 +1,7 @@
-'use client'
+"use client";
 
-import { motion } from "framer-motion"
 import { Card } from "@/components/ui/Card";
+import { motion } from "framer-motion";
 
 export default function AboutEvent() {
   return (
@@ -16,8 +16,8 @@ export default function AboutEvent() {
         >
           {/* Title */}
           <div className="text-center mb-16">
-          <h3 className="text-4xl underline font-bold text-orange-100 text-center mb-12 flex items-center justify-center gap-2">
-            About the Event
+            <h3 className="text-4xl underline font-bold text-orange-100 text-center mb-12 flex items-center justify-center gap-2">
+              About the Event
             </h3>
           </div>
 
@@ -30,14 +30,13 @@ export default function AboutEvent() {
             className="mb-16"
           >
             <p className="text-orange-200 text-lg md:text-xl leading-relaxed max-w-4xl mx-auto text-center font-mono">
-              BMSIT&amp;M PRESENTS &quot;ANVESHANA PROTOTYPE COMPETITION 2024-25,&quot; A NATIONAL
-              LEVEL INNOVATION CHALLENGE FOR STUDENTS, FOCUSED ON REAL-WORLD PROBLEMS
-              THAT BRIDGE ACADEMIA AND INDUSTRY. PARTICIPANTS WILL INNOVATE AND
-              PROTOTYPE SOLUTIONS TO PRACTICAL CHALLENGES. THIS EVENT OFFERS A
-              PLATFORM FOR STUDENTS TO SHOWCASE THEIR SKILLS AND GAIN VALUABLE
-              EXPERIENCE.
+              BMSIT&amp;M PRESENTS &quot;ANVESHANA PROTOTYPE COMPETITION
+              2024-25&quot;, A NATIONAL LEVEL INNOVATION CHALLENGE FOR STUDENTS,
+              FOCUSED ON REAL-WORLD PROBLEMS THAT BRIDGE ACADEMIA AND INDUSTRY.
+              PARTICIPANTS WILL INNOVATE AND PROTOTYPE SOLUTIONS TO PRACTICAL
+              CHALLENGES. THIS EVENT OFFERS A PLATFORM FOR STUDENTS TO SHOWCASE
+              THEIR SKILLS AND GAIN VALUABLE EXPERIENCE.
             </p>
-
           </motion.div>
 
           {/* Stats Grid */}
@@ -82,9 +81,7 @@ export default function AboutEvent() {
             </Card>
           </motion.div>
         </motion.div>
-
       </div>
-
     </section>
-  )
+  );
 }

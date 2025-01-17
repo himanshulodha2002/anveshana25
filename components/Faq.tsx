@@ -1,16 +1,16 @@
 "use client";
 
-import { motion } from "framer-motion";
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-import { Button } from "./ui/Button";
-import Link from "next/link";
-import { FaqSectionProps } from "@/lib/types";
 import { faqs } from "@/lib/data";
+import { FaqSectionProps } from "@/lib/types";
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { Button } from "./ui/Button";
 
 export default function FaqSection({
   faqCount = 5,
@@ -38,9 +38,9 @@ export default function FaqSection({
           <h3 className="text-3xl font-bold text-orange-100 text-center mb-12 flex items-center justify-center gap-2">
             Frequently Asked Questions
           </h3>
-          <p className="text-orange-300 max-w-2xl mx-auto text-lg font-mono">
+          {/* <p className="text-orange-300 max-w-2xl mx-auto text-lg font-mono">
             Find answers to common questions about the prototype competition
-          </p>
+          </p> */}
         </motion.div>
 
         {/* FAQ Accordion */}
