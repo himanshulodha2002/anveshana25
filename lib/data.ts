@@ -234,3 +234,20 @@ export const teamCards = [
     src: noimage,
   },
 ] as const;
+
+export const quickLinks = [
+  {
+    label: "Register Now",
+    href: "https://unstop.com/p/anveshana-bms-institute-of-technology-and-management-1350340?ref=x70LNhV5",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+  {
+    label: "Event Brochure",
+    href: "/brochure.pdf",
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+  { label: "Schedule", href: "/timeline", target: "_self", rel: "" },
+  { label: "FAQs", href: "/faq", target: "_self", rel: "" },
+] as const;

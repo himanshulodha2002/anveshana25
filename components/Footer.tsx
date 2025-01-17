@@ -1,5 +1,6 @@
 "use client";
 
+import { quickLinks } from "@/lib/data";
 import { motion } from "framer-motion";
 import { ExternalLink, Heart, Mail, MapPin, Phone } from "lucide-react";
 import { Card } from "./ui/Card";
@@ -116,7 +117,7 @@ export default function Footer() {
 
       {/* Copyright Section */}
       <div className="border-t border-orange-500/20 bg-orange-950/50">
-        <div className="container mx-auto px-8 py-6">
+        <div className="container mx-auto px-8 py-2">
           <motion.p
             className="text-center text-orange-300 text-base flex items-center justify-center gap-2"
             initial={{ opacity: 0 }}
@@ -136,20 +137,3 @@ export default function Footer() {
     </footer>
   );
 }
-
-const quickLinks = [
-  {
-    label: "Register Now",
-    href: "https://unstop.com/p/anveshana-bms-institute-of-technology-and-management-1350340?ref=x70LNhV5",
-    target: "_blank",
-    rel: "noopener noreferrer",
-  },
-  {
-    label: "Event Brochure",
-    href: "/brochure.pdf",
-    target: "_blank",
-    rel: "noopener noreferrer",
-  },
-  { label: "Schedule", href: "/timeline" },
-  { label: "FAQs", href: "/faq" },
-];
