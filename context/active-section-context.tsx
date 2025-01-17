@@ -1,7 +1,8 @@
 "use client";
 
 import type { SectionName } from "@/lib/types";
-import React, { createContext, useContext, useState } from "react";
+import { usePathname } from "next/navigation";
+import React, { createContext, useContext, useEffect, useState } from "react";
 
 type ActiveSectionContextProviderProps = {
   children: React.ReactNode;
@@ -22,6 +23,20 @@ export default function ActiveSectionContextProvider({
 }: ActiveSectionContextProviderProps) {
   const [activeSection, setActiveSection] = useState<SectionName>("Home");
   const [timeOfLastClick, setTimeOfLastClick] = useState(0);
+  const pathname = usePathname();
+
+  // Update active section based on pathname
+  useEffect(() => {
+    // Remove leading slash and convert to title case
+    const currentPath = pathname ? pathname.slice(1) : "";
+    if (currentPath) {
+      const sectionName = (currentPath.charAt(0).toUpperCase() +
+        currentPath.slice(1)) as SectionName;
+      setActiveSection(sectionName);
+    } else {
+      setActiveSection("Home");
+    }
+  }, [pathname]);
 
   return (
     <ActiveSectionContext.Provider

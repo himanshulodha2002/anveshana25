@@ -1,4 +1,4 @@
-import { Calendar, Cpu, Presentation } from "lucide-react";
+import { Calendar, ClipboardList, Cpu, Presentation } from "lucide-react";
 
 export const links = [
   {
@@ -104,24 +104,31 @@ export const faqs = [
 export const timelineEvents = [
   {
     icon: Calendar,
-    title: "Round 1: Proposal Evaluation",
-    date: "February 2025",
+    title: "Registration Phase",
+    date: "January 9 - February 8, 2025",
     description:
-      "Submit your innovative prototype proposal for initial evaluation. Top proposals will be selected for the next round.",
+      "Register on the Unstop platform and submit your proposal using the provided template. Ensure submission before the deadline to qualify for evaluation.",
+  },
+  {
+    icon: ClipboardList,
+    title: "Round 1: Proposal Evaluation",
+    date: "February 9 - February 28, 2025 (Tentative)",
+    description:
+      "Domain experts will evaluate the submitted proposals. Shortlisted proposals will advance to the next round. Evaluations are based on innovation, feasibility, and potential impact.",
   },
   {
     icon: Presentation,
     title: "Round 2: Virtual Presentation",
-    date: "March 2025",
+    date: "March 6 - March 8, 2025",
     description:
-      "Present your concept virtually to our expert panel. Demonstrate the potential impact and feasibility of your prototype.",
+      "Shortlisted teams present their project virtually. Ensure a reliable device and internet connection for an uninterrupted presentation. Top 50 teams will advance to the final round.",
   },
   {
     icon: Cpu,
-    title: "Round 3: Final Prototype",
+    title: "Round 3: Grand Finale",
     date: "March 28, 2025",
     description:
-      "Showcase your working prototype at BMSIT&M Campus. Compete for exciting prizes and recognition.",
+      "Showcase your working prototype at BMSIT&M Campus. Participate in evaluations, public exhibitions, and compete for prizes worth ₹2,25,000.",
   },
 ] as const;
 
