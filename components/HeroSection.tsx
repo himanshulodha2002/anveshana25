@@ -1,4 +1,3 @@
-// import SandwormAnimation from "@/components/SandwormAnimation";
 import { Button } from "@/components/ui/Button";
 import { motion, MotionValue } from "framer-motion";
 import { ChevronDown } from "lucide-react";
@@ -31,7 +30,7 @@ HeroSectionProps) {
   }, []);
 
   return (
-    <section className="h-screen relative overflow-hidden flex items-center justify-center bg-gradient-to-b from-orange-950 via-orange-900 to-orange-950">
+    <section className="h-screen relative overflow-hidden flex flex-col pt-32 md:pt-40 bg-gradient-to-b from-orange-950 via-orange-900 to-orange-950">
       {/* Floating shapes */}
       <motion.div
         className="absolute inset-0 pointer-events-none"
@@ -233,7 +232,7 @@ HeroSectionProps) {
 
       {/* Enhanced content animations */}
       <motion.div
-        className="relative z-20 text-center space-y-8 max-w-4xl mx-auto px-4"
+        className="relative z-20 text-center space-y-8 max-w-4xl mx-auto px-4 mt-20 md:mt-24"
         style={{ y: textY }}
       >
         <motion.h1
