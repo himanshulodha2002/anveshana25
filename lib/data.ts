@@ -261,7 +261,7 @@ export const teamCards = [
     src: contentteamhead,
   },
   {
-    title: "Himanshu ",
+    title: "Himanshu Lodha",
     subtitle: "Technical Team",
     src: techteamhead,
     linkedin: "https://www.linkedin.com/in/himanshu2002/",
