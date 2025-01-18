@@ -61,9 +61,9 @@ export const Card = React.memo(
             <Instagram className="w-5 h-5" />
           </Link>
         )}
-        {card.email && (
+        {card.email && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(card.email) && (
           <Link
-            href={`mailto:${card.email}`}
+            href={`mailto:${encodeURIComponent(card.email)}`}
             className="text-orange-400 hover:text-orange-300 transition-colors"
           >
             <Mail className="w-5 h-5" />
