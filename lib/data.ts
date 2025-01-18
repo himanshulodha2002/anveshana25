@@ -106,11 +106,11 @@ export const faqs = [
     answer:
       "The competition is open to all currently studying undergraduate and postgraduate students across institutes in India. Teams can comprise up to 4 members from the same college, and can include interdisciplinary and cross-year students.",
   },
-  {
-    question: "Is there a registration fee?",
-    answer:
-      "Initial registration is free. However, teams that advance to the second round will need to pay a registration fee of ₹1,000.",
-  },
+  // {
+  //   question: "Is there a registration fee?",
+  //   answer:
+  //     "Initial registration is free. However, teams that advance to the second round will need to pay a registration fee of ₹1,000.",
+  // },
   {
     question: "Can I participate in multiple teams?",
     answer:
