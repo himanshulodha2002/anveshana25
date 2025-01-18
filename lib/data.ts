@@ -49,9 +49,9 @@ export const cards = [
   {
     src: "/images/Gallery/5.jpg",
   },
-  {
-    src: "/images/Gallery/6.jpg",
-  },
+  // {
+  //   src: "/images/Gallery/6.jpg",
+  // },
   {
     src: "/images/Gallery/7.jpg",
   },
