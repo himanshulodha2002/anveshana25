@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer";
 import Header from "@/components/Header";
 import ActiveSectionContextProvider from "@/context/active-section-context";
+import { Analytics } from "@vercel/analytics/react";
 import type { Metadata } from "next";
 import "../styles/globals.css";
 
@@ -16,6 +17,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Analytics />
       <body
       // className="bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950"
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
