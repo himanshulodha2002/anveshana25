@@ -1,11 +1,13 @@
 import contentteamhead from "@/public/images/team/contentteamhead.jpg";
+import designteamhead from "@/public/images/team/designteamhead.jpg";
 import enentsteamhead from "@/public/images/team/eventsteamhead.jpg";
-import noimage from "@/public/images/team/image.png";
+// import noimage from "@/public/images/team/image.png";
 import marketteamhead from "@/public/images/team/marketteamhead.jpg";
 import opsteamhead from "@/public/images/team/opsteamhead.jpg";
 import president from "@/public/images/team/president.jpg";
 import techteamhead from "@/public/images/team/techteamhead.png";
 import viceprecident from "@/public/images/team/viceprecident.jpg";
+// import { link } from "fs";
 import { Calendar, ClipboardList, Cpu, Presentation } from "lucide-react";
 
 export const links = [
@@ -231,9 +233,11 @@ export const timelineEvents = [
 
 export const teamCards = [
   {
-    title: "S Meghana",
+    title: "S Meghna",
     subtitle: "President",
     src: president,
+    linkedin: "http://www.linkedin.com/in/s-meghna1603",
+    email: "meghnasandi2019@gmail.com",
   },
   {
     title: "Anagha",
@@ -253,7 +257,7 @@ export const teamCards = [
   {
     title: "Harshita",
     subtitle: "Design Team",
-    src: noimage,
+    src: designteamhead,
   },
   {
     title: "Ankitha",
@@ -266,6 +270,7 @@ export const teamCards = [
     src: techteamhead,
     linkedin: "https://www.linkedin.com/in/himanshu2002/",
     email: "lodhahimanshu2002@gmail.com",
+    website: "https://www.himanshulodha.me",
   },
   {
     title: "Srisha",

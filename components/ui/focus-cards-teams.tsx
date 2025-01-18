@@ -1,7 +1,7 @@
 "use client";
 import { CardType } from "@/lib/types";
 import { cn } from "@/lib/utils";
-import { Instagram, Linkedin, Mail } from "lucide-react";
+import { Globe, Instagram, Linkedin, Mail } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
@@ -67,6 +67,16 @@ export const Card = React.memo(
             className="text-orange-400 hover:text-orange-300 transition-colors"
           >
             <Mail className="w-5 h-5" />
+          </Link>
+        )}
+        {card.website && (
+          <Link
+            href={card.website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-orange-400 hover:text-orange-300 transition-colors"
+          >
+            <Globe className="w-5 h-5" />
           </Link>
         )}
       </div>
