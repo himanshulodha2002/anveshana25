@@ -270,6 +270,7 @@ export const teamCards = [
     subtitle: "Content Head",
     src: contentteamhead,
     email: "ankithakandhi@gmail.com",
+    linkedin: "https://www.linkedin.com/in/ankitha-kandhi-728a7a323/",
   },
   {
     title: "Himanshu Lodha",
