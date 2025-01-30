@@ -106,7 +106,7 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin className="h-5 w-5 text-orange-400 flex-shrink-0 mt-1" />
                   <span className="text-orange-300">
-                    BICEP, First Floor, Lab Block BMSIT&M Campus
+                    BICEP, Second Floor, Lab Block BMSIT&M Campus
                   </span>
                 </div>
               </li>
