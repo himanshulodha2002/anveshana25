@@ -293,8 +293,8 @@ export const teamCards = [
 
 export const teacherCards = [
   {
-    title: "Ms. Shama H M",
-    subtitle: "Teacher Coordinator",
+    title: "Prof. Shama H M",
+    subtitle: "Chief Coordinator of Anveshana",
     src: teachershamamaam,
     // linkedin: "http://www.linkedin.com/in/s-meghna1603",
     // email: "meghnasandi2019@gmail.com",
