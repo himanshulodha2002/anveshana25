@@ -5,6 +5,7 @@ import enentsteamhead from "@/public/images/team/eventsteamhead.jpg";
 import marketteamhead from "@/public/images/team/marketteamhead.jpg";
 import opsteamhead from "@/public/images/team/opsteamhead.jpg";
 import president from "@/public/images/team/president.jpg";
+import teachershamamaam from "@/public/images/team/teachers/shamamaamteacher.jpg";
 import techteamhead from "@/public/images/team/techteamhead.png";
 import viceprecident from "@/public/images/team/viceprecident.jpg";
 import { Calendar, ClipboardList, Cpu, Presentation } from "lucide-react";
@@ -203,9 +204,9 @@ export const timelineEvents = [
   {
     icon: Calendar,
     title: "Registration Phase",
-    date: "January 9 - February 8, 2025",
+    date: "January 9 - February 18, 2025",
     description:
-      "Register on the Unstop platform and submit your proposal using the provided template. Ensure submission before the deadline to qualify for evaluation.",
+      "Register on the Unstop platform and submit your proposal using the provided template. Ensure submission before the deadline to qualify for evaluation. (Now extended to February 18, 2025)",
   },
   {
     icon: ClipboardList,
@@ -287,6 +288,16 @@ export const teamCards = [
     subtitle: "Marketing Head",
     src: marketteamhead,
     linkedin: "https://www.linkedin.com/in/srisha-ks-5a5050329/",
+  },
+] as const;
+
+export const teacherCards = [
+  {
+    title: "Ms. Shama H M",
+    subtitle: "Teacher Coordinator",
+    src: teachershamamaam,
+    // linkedin: "http://www.linkedin.com/in/s-meghna1603",
+    // email: "meghnasandi2019@gmail.com",
   },
 ] as const;
 

@@ -270,6 +270,14 @@ export default function HeroSection() {
             </motion.div>
           </Link>
         </motion.div>
+        {/* <motion.p
+          className="text-s md:text-m text-orange-200/60 [text-shadow:_0_2px_10px_rgb(251_146_60_/_20%)]"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+        >
+          (First round registrations are extended till 18th february, 2025.)
+        </motion.p> */}
       </motion.div>
 
       <motion.div
