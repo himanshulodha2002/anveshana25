@@ -297,7 +297,7 @@ export const teacherCards = [
     subtitle: "Chief Faculty Coordinator",
     src: teachershamamaam,
     // linkedin: "http://www.linkedin.com/in/s-meghna1603",
-    // email: "meghnasandi2019@gmail.com",
+    email: "shama@bmsit.in",
   },
 ] as const;
 
