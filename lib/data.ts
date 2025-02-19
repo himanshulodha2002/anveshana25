@@ -204,9 +204,9 @@ export const timelineEvents = [
   {
     icon: Calendar,
     title: "Registration Phase",
-    date: "January 9 - February 18, 2025",
+    date: "January 9 - February 23, 2025",
     description:
-      "Register on the Unstop platform and submit your proposal using the provided template. Ensure submission before the deadline to qualify for evaluation. (Now extended to February 18, 2025)",
+      "Register on the Unstop platform and submit your proposal using the provided template. Ensure submission before the deadline to qualify for evaluation. (Now extended to February 23, 2025)",
   },
   {
     icon: ClipboardList,

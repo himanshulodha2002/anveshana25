@@ -43,7 +43,7 @@ export default function AboutEvent() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.8 }}
             >
-              (First round registrations are extended till 18th february, 2025.)
+              (First round registrations are extended till 23th february, 2025.)
             </motion.p>
           </motion.div>
 
