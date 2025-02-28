@@ -6,6 +6,7 @@ export type SectionName =
   | "Gallery"
   | "Contact"
   | "FAQ"
+  | "Results"
   | "Our Team";
 
 export type CardType = {
@@ -30,4 +31,10 @@ export interface RoundCardProps {
 export interface FaqSectionProps {
   faqCount?: number;
   isVisible?: boolean;
+}
+
+export interface ResultTeam {
+  teamName: string;
+  teamLeader: string;
+  status: string;
 }

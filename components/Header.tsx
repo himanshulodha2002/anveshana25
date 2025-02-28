@@ -58,8 +58,8 @@ export default function Header() {
       >
         <ul
           className={clsx(
-            "flex flex-col md:flex-row w-[90%] md:w-[33.85rem] mx-auto items-center justify-center gap-y-5 md:gap-5 text-[0.9rem] font-medium text-gray-900",
-            "bg-orange-300/20 backdrop-blur-[0.5rem] rounded-lg md:rounded-full border border-white/10 p-6 md:p-0",
+            "flex flex-col md:flex-row w-[90%] md:w-[42rem] mx-auto items-center justify-center gap-y-5 md:gap-5 text-[0.9rem] font-medium text-gray-900",
+            "bg-orange-300/20 backdrop-blur-[0.5rem] rounded-lg md:rounded-full border border-white/10 p-6 md:p-2",
             isMenuOpen ? "flex" : "hidden md:flex"
           )}
         >
@@ -68,12 +68,12 @@ export default function Header() {
               className="relative w-full md:w-auto"
               key={link.hash}
               initial={{ y: -100, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
+              animate={{ opacity: 1, y: 0 }}
             >
               <Link
                 className={clsx(
-                  "flex w-full items-center justify-center px-4 py-2 hover:text-green-950 transition text-center relative",
-                  "text-base md:text-lg font-mono text-orange-400",
+                  "flex w-full items-center justify-center px-3 py-2 hover:text-green-950 transition text-center relative",
+                  "text-base md:text-sm lg:text-base font-mono text-orange-400",
                   {
                     "text-gray-950": isLinkActive(link),
                   }

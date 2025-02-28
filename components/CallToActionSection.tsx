@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/Button";
 import { Card } from "@/components/ui/Card";
 import { motion } from "framer-motion";
-import { QrCode, Sword, Trophy } from "lucide-react";
+import { QrCode, Sword, Trophy, Award } from "lucide-react";
+import Link from "next/link";
 
 export default function CallToActionSection() {
   return (
@@ -34,19 +35,30 @@ export default function CallToActionSection() {
               <div className="text-5xl md:text-6xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-orange-400 to-amber-400">
                 ₹2,25,000
               </div>
-              <Button
-                size="lg"
-                className="bg-orange-600 hover:bg-orange-700 text-white"
-                onClick={() =>
-                  window.open(
-                    "https://unstop.com/p/anveshana-bms-institute-of-technology-and-management-1350340?ref=x70LNhV5",
-                    "_blank"
-                  )
-                }
-              >
-                Register Now
-                <QrCode className="ml-2 h-4 w-4" />
-              </Button>
+              <div className="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
+                <Button
+                  size="lg"
+                  className="bg-orange-600 hover:bg-orange-700 text-white w-full sm:w-auto"
+                  onClick={() =>
+                    window.open(
+                      "https://unstop.com/p/anveshana-bms-institute-of-technology-and-management-1350340?ref=x70LNhV5",
+                      "_blank"
+                    )
+                  }
+                >
+                  Register Now
+                  <QrCode className="ml-2 h-4 w-4" />
+                </Button>
+                <Link href="/results" className="w-full sm:w-auto">
+                  <Button
+                    size="lg"
+                    className="bg-orange-800 hover:bg-orange-900 text-white w-full"
+                  >
+                    View Results
+                    <Award className="ml-2 h-4 w-4" />
+                  </Button>
+                </Link>
+              </div>
             </div>
           </Card>
         </motion.div>

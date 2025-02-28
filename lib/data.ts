@@ -24,6 +24,10 @@ export const links = [
     hash: "/gallery",
   },
   {
+    name: "Results",
+    hash: "/results",
+  },
+  {
     name: "Our Team",
     hash: "/team",
   },
@@ -166,7 +170,7 @@ export const faqs = [
     question:
       "Can I register if I have already participated in similar competitions?",
     answer:
-      "Yes, you can register even if you’ve participated in similar competitions. However, the prototype submitted must be original and adhere to the competition guidelines.",
+      "Yes, you can register even if you've participated in similar competitions. However, the prototype submitted must be original and adhere to the competition guidelines.",
   },
   {
     question: "Can I submit multiple prototypes?",
@@ -315,5 +319,85 @@ export const quickLinks = [
     rel: "noopener noreferrer",
   },
   { label: "Schedule", href: "/timeline", target: "_self", rel: "" },
+  { label: "Results", href: "/results", target: "_self", rel: "" },
   { label: "FAQs", href: "/faq", target: "_self", rel: "" },
 ] as const;
+
+// Mock data for results
+export const resultsData = [
+  {
+    teamName: "Innovators",
+    teamLeader: "Rahul Sharma",
+    status: "Selected",
+  },
+  {
+    teamName: "Tech Wizards",
+    teamLeader: "Priya Patel",
+    status: "Selected",
+  },
+  {
+    teamName: "Future Builders",
+    teamLeader: "Arjun Reddy",
+    status: "Selected",
+  },
+  {
+    teamName: "Code Crafters",
+    teamLeader: "Sneha Gupta",
+    status: "Selected",
+  },
+  {
+    teamName: "Quantum Leap",
+    teamLeader: "Vikram Singh",
+    status: "Selected",
+  },
+  {
+    teamName: "Digital Dynamos",
+    teamLeader: "Aisha Khan",
+    status: "Selected",
+  },
+  {
+    teamName: "Tech Titans",
+    teamLeader: "Karthik Nair",
+    status: "Selected",
+  },
+  {
+    teamName: "Byte Brigade",
+    teamLeader: "Meera Joshi",
+    status: "Selected",
+  },
+  {
+    teamName: "Innovate X",
+    teamLeader: "Rohan Mehta",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Future Tech",
+    teamLeader: "Neha Reddy",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Code Ninjas",
+    teamLeader: "Sanjay Kumar",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Binary Brains",
+    teamLeader: "Divya Sharma",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Tech Savvy",
+    teamLeader: "Rajesh Khanna",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Cyber Squad",
+    teamLeader: "Ananya Desai",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Data Wizards",
+    teamLeader: "Varun Kapoor",
+    status: "Withdrawn",
+  },
+];
