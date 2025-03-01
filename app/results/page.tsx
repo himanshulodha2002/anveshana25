@@ -1,90 +1,106 @@
-"use client";
-import SandParticles from "@/components/SandParticles";
-import { ResultsTable } from "@/components/ResultsTable";
-import { resultsData } from "@/lib/data";
-import { useState, useRef, useEffect } from "react";
-import { ArrowDownUp, CheckCircle, ChevronDown, Clock, Filter, Search, X } from "lucide-react";
-import { Button } from "@/components/ui/Button";
+"use client"
+import React, { useState, useRef, useEffect } from "react"
+import SandParticles from "@/components/SandParticles"
+import { ResultsTable } from "@/components/ResultsTable"
+import { resultsData } from "@/lib/data"
+import { ArrowDownUp, CheckCircle, ChevronDown, Clock, Filter, Search, X } from "lucide-react"
+import { Button } from "@/components/ui/Button"
 
 export default function Results() {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [statusFilter, setStatusFilter] = useState<string | null>(null);
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const dropdownRef = useRef<HTMLDivElement>(null);
+  const [searchTerm, setSearchTerm] = useState("")
+  const [statusFilter, setStatusFilter] = useState<string | null>(null)
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+  const dropdownRef = useRef<HTMLDivElement>(null)
   const [sortOrder, setSortOrder] = useState<{
-    field: "teamName" | "teamLeader" | "status";
-    direction: "asc" | "desc";
-  }>({ field: "teamName", direction: "asc" });
+    field: "teamName" | "teamLeader" | "status"
+    direction: "asc" | "desc"
+  }>({ field: "teamName", direction: "asc" })
+  const [currentPage, setCurrentPage] = useState(1)
+  const teamsPerPage = 15
 
   // Get unique statuses from data
-  const statuses = Array.from(new Set(resultsData.map((team) => team.status)));
+  const statuses = Array.from(new Set(resultsData.map((team) => team.status)))
 
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target as Node)
-      ) {
-        setIsDropdownOpen(false);
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false)
       }
     }
-    document.addEventListener("mousedown", handleClickOutside);
+    document.addEventListener("mousedown", handleClickOutside)
     return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
+      document.removeEventListener("mousedown", handleClickOutside)
+    }
+  }, [])
 
   // Filter results based on search term and status filter
   const filteredResults = resultsData.filter((team) => {
     const matchesSearch =
       team.teamName.toLowerCase().includes(searchTerm.toLowerCase()) ||
-      team.teamLeader.toLowerCase().includes(searchTerm.toLowerCase());
+      team.teamLeader.toLowerCase().includes(searchTerm.toLowerCase())
 
-    const matchesStatus =
-      statusFilter === null ||
-      team.status.toLowerCase() === statusFilter.toLowerCase();
+    const matchesStatus = statusFilter === null || team.status.toLowerCase() === statusFilter.toLowerCase()
 
-    return matchesSearch && matchesStatus;
-  });
+    return matchesSearch && matchesStatus
+  })
 
   // Sort results based on current sort order
   const sortedResults = [...filteredResults].sort((a, b) => {
-    const fieldA = a[sortOrder.field].toLowerCase();
-    const fieldB = b[sortOrder.field].toLowerCase();
+    const fieldA = a[sortOrder.field].toLowerCase()
+    const fieldB = b[sortOrder.field].toLowerCase()
 
     // Custom sort order for status: Selected > Waitlisted > Withdrawn
     if (sortOrder.field === "status") {
-      const statusOrder = { selected: 1, waitlisted: 2, withdrawn: 3 };
-      const orderA = statusOrder[fieldA as keyof typeof statusOrder] || 4;
-      const orderB = statusOrder[fieldB as keyof typeof statusOrder] || 4;
+      const statusOrder = { selected: 1, waitlisted: 2, withdrawn: 3 }
+      const orderA = statusOrder[fieldA as keyof typeof statusOrder] || 4
+      const orderB = statusOrder[fieldB as keyof typeof statusOrder] || 4
 
-      return sortOrder.direction === "asc" ? orderA - orderB : orderB - orderA;
+      return sortOrder.direction === "asc" ? orderA - orderB : orderB - orderA
     }
 
     // Standard string comparison for other fields
-    if (fieldA < fieldB) return sortOrder.direction === "asc" ? -1 : 1;
-    if (fieldA > fieldB) return sortOrder.direction === "asc" ? 1 : -1;
-    return 0;
-  });
+    if (fieldA < fieldB) return sortOrder.direction === "asc" ? -1 : 1
+    if (fieldA > fieldB) return sortOrder.direction === "asc" ? 1 : -1
+    return 0
+  })
+
+  // Pagination logic
+  const indexOfLastTeam = currentPage * teamsPerPage
+  const indexOfFirstTeam = indexOfLastTeam - teamsPerPage
+  const currentTeams = sortedResults.slice(indexOfFirstTeam, indexOfLastTeam)
+  const totalPages = Math.ceil(sortedResults.length / teamsPerPage)
+
+  // Handle page changes
+  const goToPage = (pageNumber: number) => {
+    setCurrentPage(pageNumber)
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
+
+  const goToPreviousPage = () => {
+    if (currentPage > 1) {
+      goToPage(currentPage - 1)
+    }
+  }
+
+  const goToNextPage = () => {
+    if (currentPage < totalPages) {
+      goToPage(currentPage + 1)
+    }
+  }
 
   // Toggle sort order for a field
   const toggleSort = (field: "teamName" | "teamLeader" | "status") => {
     setSortOrder({
       field,
-      direction:
-        sortOrder.field === field && sortOrder.direction === "asc"
-          ? "desc"
-          : "asc",
-    });
-  };
+      direction: sortOrder.field === field && sortOrder.direction === "asc" ? "desc" : "asc",
+    })
+  }
 
   return (
     <div className="min-h-[100vh] bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto pt-32 px-4">
-        <h1 className="text-4xl font-bold text-center text-white mb-8">
-          Competition Results
-        </h1>
+        <h1 className="text-4xl font-bold text-center text-white mb-8">Competition Results</h1>
 
         {/* Search and Filter Controls */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
@@ -123,8 +139,8 @@ export default function Results() {
                     <div className="p-2">
                       <button
                         onClick={() => {
-                          setStatusFilter(null);
-                          setIsDropdownOpen(false);
+                          setStatusFilter(null)
+                          setIsDropdownOpen(false)
                         }}
                         className="w-full text-left px-3 py-2 text-orange-100 hover:bg-orange-800/60 rounded-md flex items-center justify-between"
                       >
@@ -136,20 +152,16 @@ export default function Results() {
                         <button
                           key={status}
                           onClick={() => {
-                            setStatusFilter(status);
-                            setIsDropdownOpen(false);
+                            setStatusFilter(status)
+                            setIsDropdownOpen(false)
                           }}
                           className="w-full text-left px-3 py-2 text-orange-100 hover:bg-orange-800/60 rounded-md flex items-center justify-between"
                         >
                           <div className="flex items-center">
                             {getStatusIcon(status)}
-                            <span className={`ml-2 ${getStatusClass(status)}`}>
-                              {status}
-                            </span>
+                            <span className={`ml-2 ${getStatusClass(status)}`}>{status}</span>
                           </div>
-                          {statusFilter === status && (
-                            <Check className="h-4 w-4" />
-                          )}
+                          {statusFilter === status && <Check className="h-4 w-4" />}
                         </button>
                       ))}
                     </div>
@@ -175,7 +187,7 @@ export default function Results() {
                 <span className="text-sm text-orange-300">Filtered by: </span>
                 <span
                   className={`ml-2 text-sm px-2 py-0.5 rounded-full bg-orange-900/60 border border-orange-500/20 flex items-center ${getStatusClass(
-                    statusFilter
+                    statusFilter,
                   )}`}
                 >
                   {getStatusIcon(statusFilter)}
@@ -192,9 +204,7 @@ export default function Results() {
               size="sm"
               onClick={() => toggleSort("teamName")}
               className={`bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 ${
-                sortOrder.field === "teamName"
-                  ? "ring-2 ring-orange-500/50"
-                  : ""
+                sortOrder.field === "teamName" ? "ring-2 ring-orange-500/50" : ""
               }`}
             >
               <ArrowDownUp className="h-4 w-4 mr-1" />
@@ -205,9 +215,7 @@ export default function Results() {
               size="sm"
               onClick={() => toggleSort("teamLeader")}
               className={`bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 ${
-                sortOrder.field === "teamLeader"
-                  ? "ring-2 ring-orange-500/50"
-                  : ""
+                sortOrder.field === "teamLeader" ? "ring-2 ring-orange-500/50" : ""
               }`}
             >
               <ArrowDownUp className="h-4 w-4 mr-1" />
@@ -234,19 +242,72 @@ export default function Results() {
 
         {/* Results Table */}
         <div className="mb-16">
-          <ResultsTable
-            results={sortedResults}
-            sortOrder={sortOrder}
-            onSort={toggleSort}
-          />
+          <ResultsTable results={currentTeams} sortOrder={sortOrder} onSort={toggleSort} />
         </div>
+
+        {/* Pagination Controls */}
+        {sortedResults.length > 0 && (
+          <div className="mt-6 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div className="text-sm text-orange-300">
+              Showing {indexOfFirstTeam + 1}-{Math.min(indexOfLastTeam, sortedResults.length)} of {sortedResults.length}{" "}
+              teams
+            </div>
+
+            <div className="flex items-center gap-2">
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={goToPreviousPage}
+                disabled={currentPage === 1}
+                className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
+              >
+                Previous
+              </Button>
+
+              <div className="flex items-center gap-1">
+                {Array.from({ length: totalPages }, (_, i) => i + 1)
+                  .filter((page) => {
+                    // Show first page, last page, current page, and pages around current page
+                    return page === 1 || page === totalPages || Math.abs(page - currentPage) <= 1
+                  })
+                  .map((page, index, array) => (
+                    <React.Fragment key={page}>
+                      {index > 0 && array[index - 1] !== page - 1 && <span className="px-2 text-orange-400">...</span>}
+                      <Button
+                        variant={currentPage === page ? "default" : "outline"}
+                        size="sm"
+                        onClick={() => goToPage(page)}
+                        className={`min-w-[2.5rem] ${
+                          currentPage === page
+                            ? "bg-orange-600 hover:bg-orange-700 text-white"
+                            : "bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60"
+                        }`}
+                      >
+                        {page}
+                      </Button>
+                    </React.Fragment>
+                  ))}
+              </div>
+
+              <Button
+                variant="outline"
+                size="sm"
+                onClick={goToNextPage}
+                disabled={currentPage === totalPages}
+                className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
+              >
+                Next
+              </Button>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="fixed inset-0 pointer-events-none z-50">
         <SandParticles />
       </div>
     </div>
-  );
+  )
 }
 
 // Helper components
@@ -266,31 +327,32 @@ function Check(props: React.SVGProps<SVGSVGElement>) {
     >
       <polyline points="20 6 9 17 4 12" />
     </svg>
-  );
+  )
 }
 
 function getStatusIcon(status: string) {
   switch (status.toLowerCase()) {
     case "selected":
-      return <CheckCircle className="h-4 w-4 text-green-400" />;
+      return <CheckCircle className="h-4 w-4 text-green-400" />
     case "waitlisted":
-      return <Clock className="h-4 w-4 text-amber-400" />;
+      return <Clock className="h-4 w-4 text-amber-400" />
     case "withdrawn":
-      return <X className="h-4 w-4 text-red-400" />;
+      return <X className="h-4 w-4 text-red-400" />
     default:
-      return null;
+      return null
   }
 }
 
 function getStatusClass(status: string) {
   switch (status.toLowerCase()) {
     case "selected":
-      return "text-green-400";
+      return "text-green-400"
     case "waitlisted":
-      return "text-amber-400";
+      return "text-amber-400"
     case "withdrawn":
-      return "text-red-400";
+      return "text-red-400"
     default:
-      return "text-orange-200";
+      return "text-orange-200"
   }
 }
+

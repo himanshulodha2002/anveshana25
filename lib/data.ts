@@ -400,4 +400,354 @@ export const resultsData = [
     teamLeader: "Varun Kapoor",
     status: "Withdrawn",
   },
+  {
+    teamName: "Cloud Coders",
+    teamLeader: "Anish Mehta",
+    status: "Selected",
+  },
+  {
+    teamName: "Algorithm Geeks",
+    teamLeader: "Simran Sharma",
+    status: "Selected",
+  },
+  {
+    teamName: "Code Masters",
+    teamLeader: "Ravi Kumar",
+    status: "Selected",
+  },
+  {
+    teamName: "Techies United",
+    teamLeader: "Madhavi Reddy",
+    status: "Selected",
+  },
+  {
+    teamName: "Byte Bashers",
+    teamLeader: "Siddharth Rao",
+    status: "Selected",
+  },
+  {
+    teamName: "Quantum Coders",
+    teamLeader: "Nikita Patel",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Dev Heroes",
+    teamLeader: "Pranav Gupta",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Hackathon Hustlers",
+    teamLeader: "Vineet Chauhan",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Smart Coders",
+    teamLeader: "Riya Kapoor",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Code Runners",
+    teamLeader: "Tarun Joshi",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Byte Pioneers",
+    teamLeader: "Shalini Verma",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Hack Attack",
+    teamLeader: "Tanvi Gupta",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Algo Warriors",
+    teamLeader: "Vikash Kumar",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Code Surge",
+    teamLeader: "Alok Singh",
+    status: "Selected",
+  },
+  {
+    teamName: "Future Coders",
+    teamLeader: "Geeta Verma",
+    status: "Selected",
+  },
+  {
+    teamName: "The Hackers",
+    teamLeader: "Sushil Yadav",
+    status: "Selected",
+  },
+  {
+    teamName: "Pixel Pioneers",
+    teamLeader: "Sunita Nair",
+    status: "Selected",
+  },
+  {
+    teamName: "Tech Tinkerers",
+    teamLeader: "Ankit Khurana",
+    status: "Selected",
+  },
+  {
+    teamName: "Digital Dreamers",
+    teamLeader: "Nivedita Patel",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Code Vanguards",
+    teamLeader: "Anuj Sharma",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Future Innovators",
+    teamLeader: "Chandini Joshi",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "NextGen Coders",
+    teamLeader: "Sandeep Gupta",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Tech Titans 2",
+    teamLeader: "Suman Reddy",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Matrix Masters",
+    teamLeader: "Aman Tiwari",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Byte Crafters",
+    teamLeader: "Shikha Joshi",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Data Dynamos",
+    teamLeader: "Gaurav Sharma",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Cyber Commanders",
+    teamLeader: "Shweta Soni",
+    status: "Selected",
+  },
+  {
+    teamName: "Circuit Breakers",
+    teamLeader: "Deepak Kumar",
+    status: "Selected",
+  },
+  {
+    teamName: "Code Champions",
+    teamLeader: "Alisha Mehta",
+    status: "Selected",
+  },
+  {
+    teamName: "Code Wizards",
+    teamLeader: "Dinesh Yadav",
+    status: "Selected",
+  },
+  {
+    teamName: "Tech Toppers",
+    teamLeader: "Jitendra Kumar",
+    status: "Selected",
+  },
+  {
+    teamName: "Binary Breakers",
+    teamLeader: "Rashmi Tiwari",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Coders United",
+    teamLeader: "Anuj Gupta",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Techno Warriors",
+    teamLeader: "Priyanka Yadav",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "NextGen Innovators",
+    teamLeader: "Rajiv Sharma",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Hack Masters",
+    teamLeader: "Shubham Reddy",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Byte Surge",
+    teamLeader: "Nitin Gupta",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Binary Ninjas",
+    teamLeader: "Sonia Sharma",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Code Fury",
+    teamLeader: "Aditya Mehta",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Future Hackers",
+    teamLeader: "Kiran Patel",
+    status: "Selected",
+  },
+  {
+    teamName: "Programmers United",
+    teamLeader: "Siddhi Reddy",
+    status: "Selected",
+  },
+  {
+    teamName: "Cloud Ninjas",
+    teamLeader: "Rajinder Singh",
+    status: "Selected",
+  },
+  {
+    teamName: "Code Avengers",
+    teamLeader: "Ananya Reddy",
+    status: "Selected",
+  },
+  {
+    teamName: "Bit Busters",
+    teamLeader: "Rajeev Tiwari",
+    status: "Selected",
+  },
+  {
+    teamName: "Tech Innovators",
+    teamLeader: "Rohit Sharma",
+    status: "Selected",
+  },
+  {
+    teamName: "Algorithm Ninjas",
+    teamLeader: "Suman Singh",
+    status: "Selected",
+  },
+  {
+    teamName: "Digital Coders",
+    teamLeader: "Vishal Gupta",
+    status: "Selected",
+  },
+  {
+    teamName: "Dev Dominators",
+    teamLeader: "Komal Patel",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Tech Team",
+    teamLeader: "Niharika Reddy",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Byte Hackers",
+    teamLeader: "Manish Kumar",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Smart Techies",
+    teamLeader: "Vineeta Sharma",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Innovative Minds",
+    teamLeader: "Dilip Kumar",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Nextgen Tech",
+    teamLeader: "Harsh Joshi",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Data Breakers",
+    teamLeader: "Amrita Verma",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Future Bytes",
+    teamLeader: "Shivani Reddy",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Tech Dreams",
+    teamLeader: "Rashmi Mehta",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Digital Wizards",
+    teamLeader: "Sandeep Joshi",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Code Explorers",
+    teamLeader: "Anshika Gupta",
+    status: "Selected",
+  },
+  {
+    teamName: "Tech Mavericks",
+    teamLeader: "Vineet Reddy",
+    status: "Selected",
+  },
+  {
+    teamName: "AI Innovators",
+    teamLeader: "Saurabh Kumar",
+    status: "Selected",
+  },
+  {
+    teamName: "Binary Wires",
+    teamLeader: "Gaurav Reddy",
+    status: "Selected",
+  },
+  {
+    teamName: "Quantum Techies",
+    teamLeader: "Priya Joshi",
+    status: "Selected",
+  },
+  {
+    teamName: "Machine Learning Pioneers",
+    teamLeader: "Sunil Tiwari",
+    status: "Selected",
+  },
+  {
+    teamName: "Cyber Innovators",
+    teamLeader: "Kavita Gupta",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Data Engineers",
+    teamLeader: "Ravi Sharma",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Algorithm Pioneers",
+    teamLeader: "Vishal Tiwari",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Tech Crafters",
+    teamLeader: "Deepika Mehta",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Byte Engineers",
+    teamLeader: "Krishna Reddy",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "AI Titans",
+    teamLeader: "Ankur Singh",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Tech Storm",
+    teamLeader: "Niharika Tiwari",
+    status: "Withdrawn",
+  }
 ];
