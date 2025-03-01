@@ -100,7 +100,7 @@ export default function Results() {
   return (
     <div className="min-h-[100vh] bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto pt-32 px-4">
-        <h1 className="text-4xl font-bold text-center text-white mb-8">Competition Results</h1>
+        <h1 className="text-4xl font-bold text-center text-white mb-8">Round 1 Results</h1>
 
         {/* Search and Filter Controls */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
