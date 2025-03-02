@@ -553,27 +553,27 @@ export const resultsData = [
   {
     teamName: "Cloud Coders",
     teamLeader: "Anish Mehta",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Algorithm Geeks",
     teamLeader: "Simran Sharma",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Code Masters",
     teamLeader: "Ravi Kumar",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Techies United",
     teamLeader: "Madhavi Reddy",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Byte Bashers",
     teamLeader: "Siddharth Rao",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Quantum Coders",
@@ -618,27 +618,27 @@ export const resultsData = [
   {
     teamName: "Code Surge",
     teamLeader: "Alok Singh",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Future Coders",
     teamLeader: "Geeta Verma",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "The Hackers",
     teamLeader: "Sushil Yadav",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Pixel Pioneers",
     teamLeader: "Sunita Nair",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Tech Tinkerers",
     teamLeader: "Ankit Khurana",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Digital Dreamers",
@@ -683,27 +683,27 @@ export const resultsData = [
   {
     teamName: "Cyber Commanders",
     teamLeader: "Shweta Soni",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Circuit Breakers",
     teamLeader: "Deepak Kumar",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Code Champions",
     teamLeader: "Alisha Mehta",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Code Wizards",
     teamLeader: "Dinesh Yadav",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Tech Toppers",
     teamLeader: "Jitendra Kumar",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Binary Breakers",
@@ -748,42 +748,42 @@ export const resultsData = [
   {
     teamName: "Future Hackers",
     teamLeader: "Kiran Patel",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Programmers United",
     teamLeader: "Siddhi Reddy",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Cloud Ninjas",
     teamLeader: "Rajinder Singh",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Code Avengers",
     teamLeader: "Ananya Reddy",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Bit Busters",
     teamLeader: "Rajeev Tiwari",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Tech Innovators",
     teamLeader: "Rohit Sharma",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Algorithm Ninjas",
     teamLeader: "Suman Singh",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Digital Coders",
     teamLeader: "Vishal Gupta",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Dev Dominators",
@@ -838,32 +838,32 @@ export const resultsData = [
   {
     teamName: "Code Explorers",
     teamLeader: "Anshika Gupta",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Tech Mavericks",
     teamLeader: "Vineet Reddy",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "AI Innovators",
     teamLeader: "Saurabh Kumar",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Binary Wires",
     teamLeader: "Gaurav Reddy",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Quantum Techies",
     teamLeader: "Priya Joshi",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Machine Learning Pioneers",
     teamLeader: "Sunil Tiwari",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Cyber Innovators",

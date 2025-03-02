@@ -46,7 +46,7 @@ export default function Results() {
     return matchesSearch && matchesStatus;
   });
 
-  console.log("Filtered Results:", filteredResults);
+  // console.log("Filtered Results:", filteredResults);
 
   // Sort results based on current sort order
   const sortedResults = [...filteredResults].sort((a, b) => {
@@ -68,7 +68,7 @@ export default function Results() {
     return 0;
   });
 
-  console.log("Sorted Results:", sortedResults);
+  // console.log("Sorted Results:", sortedResults);
 
   // Pagination logic
   const totalPages = Math.ceil(sortedResults.length / itemsPerPage);
@@ -77,7 +77,7 @@ export default function Results() {
     currentPage * itemsPerPage
   );
 
-  console.log("Paginated Results:", paginatedResults);
+  // console.log("Paginated Results:", paginatedResults);
 
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
@@ -140,7 +140,7 @@ export default function Results() {
                         }}
                         className="w-full text-left px-3 py-2 text-orange-100 hover:bg-orange-800/60 rounded-md flex items-center justify-between"
                       >
-                        <span>All Statuses</span>
+                        <span>All</span>
                         {statusFilter === null && <Check className="h-4 w-4" />}
                       </button>
 
@@ -252,6 +252,7 @@ export default function Results() {
             size="sm"
             onClick={() => handlePageChange(currentPage - 1)}
             disabled={currentPage === 1}
+            className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
           >
             Previous
           </Button>
@@ -261,7 +262,8 @@ export default function Results() {
               variant="outline"
               size="sm"
               onClick={() => handlePageChange(index + 1)}
-              className={currentPage === index + 1 ? "ring-2 ring-orange-500/50" : ""}
+              className={currentPage === index + 1 ? "bg-orange-600 hover:bg-orange-700 text-white"
+                : "bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60"}
             >
               {index + 1}
             </Button>
@@ -271,6 +273,7 @@ export default function Results() {
             size="sm"
             onClick={() => handlePageChange(currentPage + 1)}
             disabled={currentPage === totalPages}
+            className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
           >
             Next
           </Button>

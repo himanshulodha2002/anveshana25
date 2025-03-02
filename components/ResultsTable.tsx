@@ -62,7 +62,7 @@ export function ResultsTable({
         <thead>
           <tr className="bg-orange-900/60 text-orange-100 font-mono">
             <th
-              className="px-4 py-3 text-left rounded-tl-lg cursor-pointer hover:bg-orange-800/60 transition-colors"
+              className="px-4 py-3 text-left rounded-tl-lg cursor-pointer hover:bg-orange-800/60 transition-colors w-1/3"
               onClick={() => onSort && onSort("teamName")}
             >
               <div className="flex items-center">
@@ -71,7 +71,7 @@ export function ResultsTable({
               </div>
             </th>
             <th
-              className="px-4 py-3 text-left cursor-pointer hover:bg-orange-800/60 transition-colors"
+              className="px-4 py-3 text-left cursor-pointer hover:bg-orange-800/60 transition-colors w-1/3"
               onClick={() => onSort && onSort("teamLeader")}
             >
               <div className="flex items-center">
@@ -80,7 +80,7 @@ export function ResultsTable({
               </div>
             </th>
             <th
-              className="px-4 py-3 text-left rounded-tr-lg cursor-pointer hover:bg-orange-800/60 transition-colors"
+              className="px-4 py-3 text-left rounded-tr-lg cursor-pointer hover:bg-orange-800/60 transition-colors w-1/3"
               onClick={() => onSort && onSort("status")}
             >
               <div className="flex items-center">
