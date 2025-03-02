@@ -466,7 +466,7 @@ export const resultsData = [
   {
     teamName: "Codewizards",
     teamLeader: "Vaishnavi Hampannavar",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "vermavanshika000", teamLeader: "Vanshika", status: "Selected" },
   { teamName: "AURORA", teamLeader: "MARUTHI P", status: "Selected" },

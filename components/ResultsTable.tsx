@@ -23,6 +23,8 @@ export function ResultsTable({
     switch (status.toLowerCase()) {
       case "selected":
         return <CheckCircle className="h-5 w-5 text-green-400" />;
+      case "accepted":
+        return <CheckCircle className="h-5 w-5 text-blue-400" />;
       case "waitlisted":
         return <Clock className="h-5 w-5 text-amber-400" />;
       case "withdrawn":
@@ -36,6 +38,8 @@ export function ResultsTable({
     switch (status.toLowerCase()) {
       case "selected":
         return "text-green-400";
+      case "accepted":
+        return "text-blue-400";
       case "waitlisted":
         return "text-amber-400";
       case "withdrawn":

@@ -52,11 +52,11 @@ export default function Results() {
     const fieldA = a[sortOrder.field].toLowerCase()
     const fieldB = b[sortOrder.field].toLowerCase()
 
-    // Custom sort order for status: Selected > Waitlisted > Withdrawn
+    // Custom sort order for status: Selected > Accepted > Waitlisted > Withdrawn
     if (sortOrder.field === "status") {
-      const statusOrder = { selected: 1, waitlisted: 2, withdrawn: 3 };
-      const orderA = statusOrder[fieldA as keyof typeof statusOrder] || 4;
-      const orderB = statusOrder[fieldB as keyof typeof statusOrder] || 4;
+      const statusOrder = { selected: 1, accepted: 2, waitlisted: 3, withdrawn: 4 };
+      const orderA = statusOrder[fieldA as keyof typeof statusOrder] || 5;
+      const orderB = statusOrder[fieldB as keyof typeof statusOrder] || 5;
 
       return sortOrder.direction === "asc" ? orderA - orderB : orderB - orderA
     }
@@ -443,6 +443,8 @@ function getStatusIcon(status: string) {
   switch (status.toLowerCase()) {
     case 'selected':
       return <CheckCircle className="h-4 w-4 text-green-400" />;
+    case 'accepted':
+      return <CheckCircle className="h-4 w-4 text-blue-400" />;
     case "waitlisted":
       return <Clock className="h-4 w-4 text-amber-400" />
     case "withdrawn":
@@ -456,6 +458,8 @@ function getStatusClass(status: string) {
   switch (status.toLowerCase()) {
     case 'selected':
       return "text-green-400";
+    case 'accepted':
+      return "text-blue-400";
     case "waitlisted":
       return "text-amber-400"
     case "withdrawn":
