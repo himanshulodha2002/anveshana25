@@ -15,7 +15,7 @@ export default function Results() {
   const [sortOrder, setSortOrder] = useState<{
     field: "teamName" | "teamLeader" | "status";
     direction: "asc" | "desc";
-  }>({ field: "teamName", direction: "asc" });
+  }>({ field: "status", direction: "asc" });
 
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 15;
