@@ -328,42 +328,192 @@ export const resultsData = [
   {
     teamName: "Innovators",
     teamLeader: "Rahul Sharma",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Tech Wizards",
     teamLeader: "Priya Patel",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Future Builders",
     teamLeader: "Arjun Reddy",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Code Crafters",
     teamLeader: "Sneha Gupta",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Quantum Leap",
     teamLeader: "Vikram Singh",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Digital Dynamos",
     teamLeader: "Aisha Khan",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Tech Titans",
     teamLeader: "Karthik Nair",
-    status: "Selected",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Byte Brigade",
     teamLeader: "Meera Joshi",
-    status: "Selected",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Innovate X",
+    teamLeader: "Rohan Mehta",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Future Tech",
+    teamLeader: "Neha Reddy",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Code Ninjas",
+    teamLeader: "Sanjay Kumar",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Binary Brains",
+    teamLeader: "Divya Sharma",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Tech Savvy",
+    teamLeader: "Rajesh Khanna",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Cyber Squad",
+    teamLeader: "Ananya Desai",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Data Wizards",
+    teamLeader: "Varun Kapoor",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Innovators",
+    teamLeader: "Rahul Sharma",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Tech Wizards",
+    teamLeader: "Priya Patel",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Future Builders",
+    teamLeader: "Arjun Reddy",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Code Crafters",
+    teamLeader: "Sneha Gupta",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Quantum Leap",
+    teamLeader: "Vikram Singh",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Digital Dynamos",
+    teamLeader: "Aisha Khan",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Tech Titans",
+    teamLeader: "Karthik Nair",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Byte Brigade",
+    teamLeader: "Meera Joshi",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Innovate X",
+    teamLeader: "Rohan Mehta",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Future Tech",
+    teamLeader: "Neha Reddy",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Code Ninjas",
+    teamLeader: "Sanjay Kumar",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Binary Brains",
+    teamLeader: "Divya Sharma",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Tech Savvy",
+    teamLeader: "Rajesh Khanna",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Cyber Squad",
+    teamLeader: "Ananya Desai",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Data Wizards",
+    teamLeader: "Varun Kapoor",
+    status: "Withdrawn",
+  },
+  {
+    teamName: "Innovators",
+    teamLeader: "Rahul Sharma",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Tech Wizards",
+    teamLeader: "Priya Patel",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Future Builders",
+    teamLeader: "Arjun Reddy",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Code Crafters",
+    teamLeader: "Sneha Gupta",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Quantum Leap",
+    teamLeader: "Vikram Singh",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Digital Dynamos",
+    teamLeader: "Aisha Khan",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Tech Titans",
+    teamLeader: "Karthik Nair",
+    status: "Selected for Round 2",
+  },
+  {
+    teamName: "Byte Brigade",
+    teamLeader: "Meera Joshi",
+    status: "Selected for Round 2",
   },
   {
     teamName: "Innovate X",

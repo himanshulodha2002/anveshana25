@@ -12,11 +12,12 @@ export default function Results() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false)
   const dropdownRef = useRef<HTMLDivElement>(null)
   const [sortOrder, setSortOrder] = useState<{
-    field: "teamName" | "teamLeader" | "status"
-    direction: "asc" | "desc"
-  }>({ field: "teamName", direction: "asc" })
-  const [currentPage, setCurrentPage] = useState(1)
-  const teamsPerPage = 15
+    field: "teamName" | "teamLeader" | "status";
+    direction: "asc" | "desc";
+  }>({ field: "teamName", direction: "asc" });
+
+  const [currentPage, setCurrentPage] = useState(1);
+  const itemsPerPage = 15;
 
   // Get unique statuses from data
   const statuses = Array.from(new Set(resultsData.map((team) => team.status)))
@@ -42,8 +43,10 @@ export default function Results() {
 
     const matchesStatus = statusFilter === null || team.status.toLowerCase() === statusFilter.toLowerCase()
 
-    return matchesSearch && matchesStatus
-  })
+    return matchesSearch && matchesStatus;
+  });
+
+  console.log("Filtered Results:", filteredResults);
 
   // Sort results based on current sort order
   const sortedResults = [...filteredResults].sort((a, b) => {
@@ -52,42 +55,33 @@ export default function Results() {
 
     // Custom sort order for status: Selected > Waitlisted > Withdrawn
     if (sortOrder.field === "status") {
-      const statusOrder = { selected: 1, waitlisted: 2, withdrawn: 3 }
-      const orderA = statusOrder[fieldA as keyof typeof statusOrder] || 4
-      const orderB = statusOrder[fieldB as keyof typeof statusOrder] || 4
+      const statusOrder = { "selected for round 2": 1, waitlisted: 2, withdrawn: 3 };
+      const orderA = statusOrder[fieldA as keyof typeof statusOrder] || 4;
+      const orderB = statusOrder[fieldB as keyof typeof statusOrder] || 4;
 
       return sortOrder.direction === "asc" ? orderA - orderB : orderB - orderA
     }
 
     // Standard string comparison for other fields
-    if (fieldA < fieldB) return sortOrder.direction === "asc" ? -1 : 1
-    if (fieldA > fieldB) return sortOrder.direction === "asc" ? 1 : -1
-    return 0
-  })
+    if (fieldA < fieldB) return sortOrder.direction === "asc" ? -1 : 1;
+    if (fieldA > fieldB) return sortOrder.direction === "asc" ? 1 : -1;
+    return 0;
+  });
+
+  console.log("Sorted Results:", sortedResults);
 
   // Pagination logic
-  const indexOfLastTeam = currentPage * teamsPerPage
-  const indexOfFirstTeam = indexOfLastTeam - teamsPerPage
-  const currentTeams = sortedResults.slice(indexOfFirstTeam, indexOfLastTeam)
-  const totalPages = Math.ceil(sortedResults.length / teamsPerPage)
+  const totalPages = Math.ceil(sortedResults.length / itemsPerPage);
+  const paginatedResults = sortedResults.slice(
+    (currentPage - 1) * itemsPerPage,
+    currentPage * itemsPerPage
+  );
 
-  // Handle page changes
-  const goToPage = (pageNumber: number) => {
-    setCurrentPage(pageNumber)
-    window.scrollTo({ top: 0, behavior: "smooth" })
-  }
+  console.log("Paginated Results:", paginatedResults);
 
-  const goToPreviousPage = () => {
-    if (currentPage > 1) {
-      goToPage(currentPage - 1)
-    }
-  }
-
-  const goToNextPage = () => {
-    if (currentPage < totalPages) {
-      goToPage(currentPage + 1)
-    }
-  }
+  const handlePageChange = (page: number) => {
+    setCurrentPage(page);
+  };
 
   // Toggle sort order for a field
   const toggleSort = (field: "teamName" | "teamLeader" | "status") => {
@@ -100,7 +94,9 @@ export default function Results() {
   return (
     <div className="min-h-[100vh] bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 relative overflow-hidden">
       <div className="max-w-7xl mx-auto pt-32 px-4">
-        <h1 className="text-4xl font-bold text-center text-white mb-8">Round 1 Results</h1>
+        <h1 className="text-4xl font-bold text-center text-white mb-8">
+          Round 1 Results
+        </h1>
 
         {/* Search and Filter Controls */}
         <div className="flex flex-col md:flex-row justify-between items-center gap-4 mb-8">
@@ -237,70 +233,48 @@ export default function Results() {
 
         {/* Results Count */}
         <div className="mb-4 text-orange-300 text-sm">
-          Showing {sortedResults.length} of {resultsData.length} teams
+          Showing {paginatedResults.length} of {filteredResults.length} teams
         </div>
 
         {/* Results Table */}
         <div className="mb-16">
-          <ResultsTable results={currentTeams} sortOrder={sortOrder} onSort={toggleSort} />
+          <ResultsTable
+            results={paginatedResults}
+            sortOrder={sortOrder}
+            onSort={toggleSort}
+          />
         </div>
 
         {/* Pagination Controls */}
-        {sortedResults.length > 0 && (
-          <div className="mt-6 mb-6 flex flex-col sm:flex-row items-center justify-between gap-4">
-            <div className="text-sm text-orange-300">
-              Showing {indexOfFirstTeam + 1}-{Math.min(indexOfLastTeam, sortedResults.length)} of {sortedResults.length}{" "}
-              teams
-            </div>
-
-            <div className="flex items-center gap-2">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={goToPreviousPage}
-                disabled={currentPage === 1}
-                className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
-              >
-                Previous
-              </Button>
-
-              <div className="flex items-center gap-1">
-                {Array.from({ length: totalPages }, (_, i) => i + 1)
-                  .filter((page) => {
-                    // Show first page, last page, current page, and pages around current page
-                    return page === 1 || page === totalPages || Math.abs(page - currentPage) <= 1
-                  })
-                  .map((page, index, array) => (
-                    <React.Fragment key={page}>
-                      {index > 0 && array[index - 1] !== page - 1 && <span className="px-2 text-orange-400">...</span>}
-                      <Button
-                        variant={currentPage === page ? "default" : "outline"}
-                        size="sm"
-                        onClick={() => goToPage(page)}
-                        className={`min-w-[2.5rem] ${
-                          currentPage === page
-                            ? "bg-orange-600 hover:bg-orange-700 text-white"
-                            : "bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60"
-                        }`}
-                      >
-                        {page}
-                      </Button>
-                    </React.Fragment>
-                  ))}
-              </div>
-
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={goToNextPage}
-                disabled={currentPage === totalPages}
-                className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
-              >
-                Next
-              </Button>
-            </div>
-          </div>
-        )}
+        <div className="flex justify-center items-center gap-2 mb-4 -mt-4">
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => handlePageChange(currentPage - 1)}
+            disabled={currentPage === 1}
+          >
+            Previous
+          </Button>
+          {Array.from({ length: totalPages }, (_, index) => (
+            <Button
+              key={index + 1}
+              variant="outline"
+              size="sm"
+              onClick={() => handlePageChange(index + 1)}
+              className={currentPage === index + 1 ? "ring-2 ring-orange-500/50" : ""}
+            >
+              {index + 1}
+            </Button>
+          ))}
+          <Button
+            variant="outline"
+            size="sm"
+            onClick={() => handlePageChange(currentPage + 1)}
+            disabled={currentPage === totalPages}
+          >
+            Next
+          </Button>
+        </div>
       </div>
 
       <div className="fixed inset-0 pointer-events-none z-50">
@@ -332,8 +306,8 @@ function Check(props: React.SVGProps<SVGSVGElement>) {
 
 function getStatusIcon(status: string) {
   switch (status.toLowerCase()) {
-    case "selected":
-      return <CheckCircle className="h-4 w-4 text-green-400" />
+    case 'selected for round 2':
+      return <CheckCircle className="h-4 w-4 text-green-400" />;
     case "waitlisted":
       return <Clock className="h-4 w-4 text-amber-400" />
     case "withdrawn":
@@ -345,8 +319,8 @@ function getStatusIcon(status: string) {
 
 function getStatusClass(status: string) {
   switch (status.toLowerCase()) {
-    case "selected":
-      return "text-green-400"
+    case 'selected for round 2':
+      return "text-green-400";
     case "waitlisted":
       return "text-amber-400"
     case "withdrawn":
