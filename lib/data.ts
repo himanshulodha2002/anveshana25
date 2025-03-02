@@ -323,7 +323,7 @@ export const quickLinks = [
   { label: "FAQs", href: "/faq", target: "_self", rel: "" },
 ] as const;
 
-// Mock data for results
+
 export const resultsData = [
   {
     teamName: "InventForGood",
@@ -342,7 +342,7 @@ export const resultsData = [
     status: "Selected",
   },
   { teamName: "ajanil2612", teamLeader: "Anil Jamakhandi", status: "Selected" },
-  { teamName: "saivivek6y", teamLeader: "Sai Vivek Y", status: "Selected" },
+  { teamName: "Pinnacle Minds", teamLeader: "Sai Vivek Y", status: "Selected" },
   {
     teamName: "TEAM TRYDAN",
     teamLeader: "Divyasree s bulla",
@@ -429,7 +429,7 @@ export const resultsData = [
     status: "Selected",
   },
   {
-    teamName: "shishir.aithal123",
+    teamName: "3-X",
     teamLeader: "Shishir Aithal",
     status: "Selected",
   },
@@ -516,6 +516,7 @@ export const resultsData = [
   { teamName: "slaves of ai", teamLeader: "Shivani Wale", status: "Selected" },
   {
     teamName: "nishanthdr2156",
+    // teamName: "Hyperlocal Networking Application",
     teamLeader: "Nishanth D R",
     status: "Selected",
   },
@@ -708,7 +709,7 @@ export const resultsData = [
   },
   { teamName: "Sanjana", teamLeader: "Sanjana M", status: "Waitlisted" },
   {
-    teamName: "masoodkann899",
+    teamName: "asscr",
     teamLeader: "Masood khan",
     status: "Waitlisted",
   },
