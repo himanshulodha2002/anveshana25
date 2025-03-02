@@ -52,9 +52,9 @@ export default function Results() {
     const fieldA = a[sortOrder.field].toLowerCase()
     const fieldB = b[sortOrder.field].toLowerCase()
 
-    // Custom sort order for status: Selected > Accepted > Waitlisted > Withdrawn
+    // Custom sort order for status: Accepted > Selected > Waitlisted > Withdrawn
     if (sortOrder.field === "status") {
-      const statusOrder = { selected: 1, accepted: 2, waitlisted: 3, withdrawn: 4 };
+      const statusOrder = { accepted: 1, selected: 2, waitlisted: 3, withdrawn: 4 };
       const orderA = statusOrder[fieldA as keyof typeof statusOrder] || 5;
       const orderB = statusOrder[fieldB as keyof typeof statusOrder] || 5;
 
