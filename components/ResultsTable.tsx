@@ -21,7 +21,7 @@ export function ResultsTable({
 }: ResultsTableProps) {
   const getStatusIcon = (status: string) => {
     switch (status.toLowerCase()) {
-      case "selected for round 2":
+      case "selected":
         return <CheckCircle className="h-5 w-5 text-green-400" />;
       case "waitlisted":
         return <Clock className="h-5 w-5 text-amber-400" />;
@@ -34,7 +34,7 @@ export function ResultsTable({
 
   const getStatusClass = (status: string) => {
     switch (status.toLowerCase()) {
-      case "selected for round 2":
+      case "selected":
         return "text-green-400";
       case "waitlisted":
         return "text-amber-400";

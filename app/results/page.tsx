@@ -5,6 +5,7 @@ import { ResultsTable } from "@/components/ResultsTable"
 import { resultsData } from "@/lib/data"
 import { ArrowDownUp, CheckCircle, ChevronDown, Clock, Filter, Search, X } from "lucide-react"
 import { Button } from "@/components/ui/Button"
+// import { performSearch } from "@/utils/searchUtils"
 
 export default function Results() {
   const [searchTerm, setSearchTerm] = useState("")
@@ -46,8 +47,6 @@ export default function Results() {
     return matchesSearch && matchesStatus;
   });
 
-  // console.log("Filtered Results:", filteredResults);
-
   // Sort results based on current sort order
   const sortedResults = [...filteredResults].sort((a, b) => {
     const fieldA = a[sortOrder.field].toLowerCase()
@@ -55,7 +54,7 @@ export default function Results() {
 
     // Custom sort order for status: Selected > Waitlisted > Withdrawn
     if (sortOrder.field === "status") {
-      const statusOrder = { "selected for round 2": 1, waitlisted: 2, withdrawn: 3 };
+      const statusOrder = { selected: 1, waitlisted: 2, withdrawn: 3 };
       const orderA = statusOrder[fieldA as keyof typeof statusOrder] || 4;
       const orderB = statusOrder[fieldB as keyof typeof statusOrder] || 4;
 
@@ -68,8 +67,6 @@ export default function Results() {
     return 0;
   });
 
-  // console.log("Sorted Results:", sortedResults);
-
   // Pagination logic
   const totalPages = Math.ceil(sortedResults.length / itemsPerPage);
   const paginatedResults = sortedResults.slice(
@@ -77,10 +74,9 @@ export default function Results() {
     currentPage * itemsPerPage
   );
 
-  // console.log("Paginated Results:", paginatedResults);
-
   const handlePageChange = (page: number) => {
     setCurrentPage(page);
+    // Remove the automatic scrolling to top
   };
 
   // Toggle sort order for a field
@@ -88,8 +84,86 @@ export default function Results() {
     setSortOrder({
       field,
       direction: sortOrder.field === field && sortOrder.direction === "asc" ? "desc" : "asc",
-    })
+    });
+    setCurrentPage(1); // Reset to first page when sorting changes
   }
+
+  // Function to generate page buttons with ellipsis for responsive pagination
+  const renderPaginationButtons = () => {
+    // For small number of pages, show all buttons
+    if (totalPages <= 5) {
+      return Array.from({ length: totalPages }, (_, i) => i + 1).map((page) => (
+        <PaginationButton 
+          key={page} 
+          page={page} 
+          currentPage={currentPage} 
+          onClick={() => handlePageChange(page)} 
+        />
+      ));
+    }
+
+    // For many pages, show a responsive subset with ellipsis
+    const buttons = [];
+    
+    // Always show first page
+    buttons.push(
+      <PaginationButton 
+        key={1} 
+        page={1} 
+        currentPage={currentPage} 
+        onClick={() => handlePageChange(1)} 
+      />
+    );
+
+    // Calculate range of pages to show around current page
+    let startPage = Math.max(2, currentPage - 1);
+    let endPage = Math.min(totalPages - 1, currentPage + 1);
+    
+    // Add ellipsis if needed before middle pages
+    if (startPage > 2) {
+      buttons.push(
+        <span key="ellipsis-1" className="px-2 text-orange-300">...</span>
+      );
+    }
+
+    // Add middle pages
+    for (let i = startPage; i <= endPage; i++) {
+      buttons.push(
+        <PaginationButton 
+          key={i} 
+          page={i} 
+          currentPage={currentPage} 
+          onClick={() => handlePageChange(i)} 
+        />
+      );
+    }
+    
+    // Add ellipsis if needed after middle pages
+    if (endPage < totalPages - 1) {
+      buttons.push(
+        <span key="ellipsis-2" className="px-2 text-orange-300">...</span>
+      );
+    }
+
+    // Always show last page
+    if (totalPages > 1) {
+      buttons.push(
+        <PaginationButton 
+          key={totalPages} 
+          page={totalPages} 
+          currentPage={currentPage} 
+          onClick={() => handlePageChange(totalPages)} 
+        />
+      );
+    }
+
+    return buttons;
+  };
+
+  // Reset to first page when filters change
+  useEffect(() => {
+    setCurrentPage(1);
+  }, [searchTerm, statusFilter]);
 
   return (
     <div className="min-h-[100vh] bg-gradient-to-b from-orange-950 via-orange-800 to-orange-950 relative overflow-hidden">
@@ -245,39 +319,42 @@ export default function Results() {
           />
         </div>
 
-        {/* Pagination Controls */}
-        <div className="flex justify-center items-center gap-2 mb-4 -mt-4">
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => handlePageChange(currentPage - 1)}
-            disabled={currentPage === 1}
-            className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
-          >
-            Previous
-          </Button>
-          {Array.from({ length: totalPages }, (_, index) => (
+        {/* Pagination Controls - Responsive */}
+        {totalPages > 1 && (
+          <div className="flex flex-wrap justify-center items-center gap-2 mb-12 -mt-4">
             <Button
-              key={index + 1}
               variant="outline"
               size="sm"
-              onClick={() => handlePageChange(index + 1)}
-              className={currentPage === index + 1 ? "bg-orange-600 hover:bg-orange-700 text-white"
-                : "bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60"}
+              onClick={() => handlePageChange(currentPage - 1)}
+              disabled={currentPage === 1}
+              className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
             >
-              {index + 1}
+              Previous
             </Button>
-          ))}
-          <Button
-            variant="outline"
-            size="sm"
-            onClick={() => handlePageChange(currentPage + 1)}
-            disabled={currentPage === totalPages}
-            className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
-          >
-            Next
-          </Button>
-        </div>
+            
+            {/* Responsive page number buttons */}
+            <div className="hidden sm:flex items-center">
+              {renderPaginationButtons()}
+            </div>
+            
+            
+            <Button
+              variant="outline"
+              size="sm"
+              onClick={() => handlePageChange(currentPage + 1)}
+              disabled={currentPage === totalPages}
+              className="bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60 disabled:opacity-50"
+            >
+              Next
+            </Button>
+            {/* Mobile pagination indicator */}
+            <div className="sm:hidden flex items-center">
+              <span className="text-orange-200">
+                Page {currentPage} of {totalPages}
+              </span>
+            </div>
+          </div>
+        )}
       </div>
 
       <div className="fixed inset-0 pointer-events-none z-50">
@@ -285,6 +362,23 @@ export default function Results() {
       </div>
     </div>
   )
+}
+
+// Pagination Button Component
+function PaginationButton({ page, currentPage, onClick }: { page: number, currentPage: number, onClick: () => void }) {
+  return (
+    <Button
+      variant="outline"
+      size="sm"
+      onClick={onClick}
+      className={currentPage === page 
+        ? "bg-orange-600 hover:bg-orange-700 text-white border-orange-500"
+        : "bg-orange-900/40 border-orange-500/20 text-orange-100 hover:bg-orange-800/60"
+      }
+    >
+      {page}
+    </Button>
+  );
 }
 
 // Helper components
@@ -309,7 +403,7 @@ function Check(props: React.SVGProps<SVGSVGElement>) {
 
 function getStatusIcon(status: string) {
   switch (status.toLowerCase()) {
-    case 'selected for round 2':
+    case 'selected':
       return <CheckCircle className="h-4 w-4 text-green-400" />;
     case "waitlisted":
       return <Clock className="h-4 w-4 text-amber-400" />
@@ -322,7 +416,7 @@ function getStatusIcon(status: string) {
 
 function getStatusClass(status: string) {
   switch (status.toLowerCase()) {
-    case 'selected for round 2':
+    case 'selected':
       return "text-green-400";
     case "waitlisted":
       return "text-amber-400"
