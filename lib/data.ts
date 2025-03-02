@@ -561,7 +561,7 @@ export const resultsData = [
     status: "Selected",
   },
   {
-    teamName: "sriramthirumalasetty444",
+    teamName: "HACKSTREETBOYS",
     teamLeader: "Sriram Thirumalasetty",
     status: "Selected",
   },
