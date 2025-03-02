@@ -469,7 +469,7 @@ export const resultsData = [
     status: "Accepted",
   },
   { teamName: "vermavanshika000", teamLeader: "Vanshika", status: "Selected" },
-  { teamName: "AURORA", teamLeader: "MARUTHI P", status: "Selected" },
+  { teamName: "AURORA", teamLeader: "MARUTHI P", status: "Accepted" },
   { teamName: "Philomaths", teamLeader: "Meghana K", status: "Selected" },
   {
     teamName: "amanvishwakarma2207",
@@ -498,7 +498,7 @@ export const resultsData = [
   },
   { teamName: "Sustains", teamLeader: "Aman Singh", status: "Selected" },
   { teamName: "Despo", teamLeader: "Dipankar Chettri", status: "Selected" },
-  { teamName: "CivicX", teamLeader: "Srisha Prajwal G", status: "Selected" },
+  { teamName: "CivicX", teamLeader: "Srisha Prajwal G", status: "Accepted" },
   {
     teamName: "prasannasimha5002",
     teamLeader: "PRASANNA KUMAR SIMHADRI",
