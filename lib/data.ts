@@ -515,7 +515,7 @@ export const resultsData = [
   },
   { teamName: "slaves of ai", teamLeader: "Shivani Wale", status: "Selected" },
   {
-    teamName: "nishanthdr2156",
+    teamName: "HOODSY",
     // teamName: "Hyperlocal Networking Application",
     teamLeader: "Nishanth D R",
     status: "Selected",
@@ -667,7 +667,7 @@ export const resultsData = [
     status: "Selected",
   },
   {
-    teamName: "gouravnahar3008",
+    teamName: "InternSync",
     teamLeader: "Gourav Nahar",
     status: "Selected",
   },
