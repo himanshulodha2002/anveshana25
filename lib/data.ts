@@ -518,7 +518,7 @@ export const resultsData = [
     teamName: "HOODSY",
     // teamName: "Hyperlocal Networking Application",
     teamLeader: "Nishanth D R",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "ARAN", teamLeader: "Amrit Rajapurohit", status: "Selected" },
   {
@@ -529,7 +529,7 @@ export const resultsData = [
   {
     teamName: "dharwadshreya",
     teamLeader: "Shreya Dharwad",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "Sustainable Architects",
@@ -581,7 +581,7 @@ export const resultsData = [
     status: "Accepted",
   },
   { teamName: "palkit4141", teamLeader: "Palkeet Singh", status: "Selected" },
-  { teamName: "Groot", teamLeader: "SHASHIKIRAN B", status: "Selected" },
+  { teamName: "Groot", teamLeader: "SHASHIKIRAN B", status: "Accepted" },
   { teamName: "Quadronix", teamLeader: "Mohammed Fawwaz", status: "Selected" },
   {
     teamName: "sharathsc3000",
