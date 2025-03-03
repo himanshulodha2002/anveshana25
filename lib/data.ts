@@ -393,7 +393,7 @@ export const resultsData = [
   },
   { teamName: "JALRAAJ", teamLeader: "Aman Kumar Verma", status: "Selected" },
   { teamName: "ReviveRite", teamLeader: "Ayush Poddar", status: "Selected" },
-  { teamName: "The Vedas", teamLeader: "Srushti Jagtap", status: "Selected" },
+  { teamName: "The Vedas", teamLeader: "Srushti Jagtap", status: "Accepted" },
   {
     teamName: "Alchemyst AI",
     teamLeader: "Prithwijit Dey",
