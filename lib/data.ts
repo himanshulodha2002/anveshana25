@@ -513,7 +513,7 @@ export const resultsData = [
     teamLeader: "Yanakandla Mani Sharath",
     status: "Selected",
   },
-  { teamName: "slaves of ai", teamLeader: "Shivani Wale", status: "Selected" },
+  { teamName: "slaves of ai", teamLeader: "Shivani Wale", status: "Accepted" },
   {
     teamName: "HOODSY",
     // teamName: "Hyperlocal Networking Application",
@@ -650,7 +650,7 @@ export const resultsData = [
     status: "Selected",
   },
   { teamName: "VYASA", teamLeader: "Vallish S", status: "Acepted" },
-  { teamName: "Abhishek", teamLeader: "Abhishek e", status: "Selected" },
+  { teamName: "Abhishek", teamLeader: "Abhishek e", status: "Accepted" },
   {
     teamName: "Innovation",
     teamLeader: "Suman Raju Koujalagi",
@@ -674,7 +674,7 @@ export const resultsData = [
   {
     teamName: "Insight Syndicate",
     teamLeader: "Alan Biju",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "punithmahi2006", teamLeader: "Punith D", status: "Selected" },
   {
