@@ -335,7 +335,7 @@ export const resultsData = [
     teamLeader: "Omkar Anjaneya kumar",
     status: "Selected",
   },
-  { teamName: "ForceGaruda", teamLeader: "Akshay SP", status: "Selected" },
+  { teamName: "ForceGaruda", teamLeader: "Akshay SP", status: "Accepted" },
   {
     teamName: "bosekoushik1014",
     teamLeader: "Koushik Bose",
@@ -346,7 +346,7 @@ export const resultsData = [
   {
     teamName: "TEAM TRYDAN",
     teamLeader: "Divyasree s bulla",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "KLE Technological University",
@@ -460,7 +460,7 @@ export const resultsData = [
   {
     teamName: "Fashion_coders",
     teamLeader: "MRINAL MIDHA",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "Cyber Savvy", teamLeader: "Impu Rao HM", status: "Selected" },
   {
@@ -483,7 +483,7 @@ export const resultsData = [
   },
   { teamName: "ARC", teamLeader: "Luke Roman Noronha", status: "Selected" },
   { teamName: "Falcons", teamLeader: "Manu Sagar", status: "Selected" },
-  { teamName: "Z Gen Saura Urja", teamLeader: "NIKHIL KV", status: "Selected" },
+  { teamName: "Z Gen Saura Urja", teamLeader: "NIKHIL KV", status: "Accepted" },
   { teamName: "21a20.joywin", teamLeader: "Joywin Bennis", status: "Selected" },
   { teamName: "f4", teamLeader: "shweeta soni", status: "Selected" },
   {
@@ -504,7 +504,7 @@ export const resultsData = [
     teamLeader: "PRASANNA KUMAR SIMHADRI",
     status: "Selected",
   },
-  { teamName: "Aerotantrix", teamLeader: "Preethi", status: "Selected" },
+  { teamName: "Aerotantrix", teamLeader: "Preethi", status: "Accepted" },
   { teamName: "Noa", teamLeader: "Abhinav Gupta", status: "Selected" },
   { teamName: "Srinidhip06", teamLeader: "Srinidhi", status: "Selected" },
   { teamName: "Innovator's", teamLeader: "Sarvesh Kumar", status: "Selected" },
