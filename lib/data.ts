@@ -431,7 +431,7 @@ export const resultsData = [
   {
     teamName: "3-X",
     teamLeader: "Shishir Aithal",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "maheshkulsange05",
@@ -591,7 +591,7 @@ export const resultsData = [
   {
     teamName: "PULSE GUARD INNOVATORS",
     teamLeader: "Abhay Sharma",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "RES-Q BOT", teamLeader: "Smayana N P", status: "Selected" },
   { teamName: "SCY", teamLeader: "Sumit", status: "Selected" },
