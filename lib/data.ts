@@ -649,7 +649,7 @@ export const resultsData = [
     teamLeader: "Gogineni Naga Venkata Nihar Chowdary",
     status: "Selected",
   },
-  { teamName: "VYASA", teamLeader: "Vallish S", status: "Acepted" },
+  { teamName: "VYASA", teamLeader: "Vallish S", status: "Accepted" },
   { teamName: "Abhishek", teamLeader: "Abhishek e", status: "Accepted" },
   {
     teamName: "Innovation",
@@ -680,7 +680,7 @@ export const resultsData = [
   {
     teamName: "charangowda.m9141",
     teamLeader: "Padmacharan M",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "namanvjain456", teamLeader: "Naman Jain", status: "Selected" },
   { teamName: "Matrix Coders", teamLeader: "Mehaboob S", status: "Selected" },
