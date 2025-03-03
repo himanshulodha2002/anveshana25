@@ -400,9 +400,9 @@ export const resultsData = [
     status: "Selected",
   },
   {
-    teamName: "chanduravi.rt.gowda",
+    teamName: "Aigle Air",
     teamLeader: "Chandu R T",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "avinashsharma23407",
@@ -434,9 +434,9 @@ export const resultsData = [
     status: "Accepted",
   },
   {
-    teamName: "maheshkulsange05",
+    teamName: "Vitafeed",
     teamLeader: "Mahesh Kulsange",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "jayakirtissavant",
