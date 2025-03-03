@@ -342,7 +342,7 @@ export const resultsData = [
     status: "Selected",
   },
   { teamName: "ajanil2612", teamLeader: "Anil Jamakhandi", status: "Selected" },
-  { teamName: "Pinnacle Minds", teamLeader: "Sai Vivek Y", status: "Selected" },
+  { teamName: "Pinnacle Minds", teamLeader: "Sai Vivek Y", status: "Accepted" },
   {
     teamName: "TEAM TRYDAN",
     teamLeader: "Divyasree s bulla",
