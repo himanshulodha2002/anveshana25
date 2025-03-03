@@ -376,9 +376,9 @@ export const resultsData = [
     status: "Selected",
   },
   {
-    teamName: "devangisood2005",
+    teamName: "BeetBeep",
     teamLeader: "Devangi Sood",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "abhishek1530002",
@@ -389,7 +389,7 @@ export const resultsData = [
   {
     teamName: "Visionary Minds",
     teamLeader: "Kushal YN Gowda",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "JALRAAJ", teamLeader: "Aman Kumar Verma", status: "Selected" },
   { teamName: "ReviveRite", teamLeader: "Ayush Poddar", status: "Selected" },
