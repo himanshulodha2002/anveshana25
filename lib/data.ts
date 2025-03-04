@@ -468,7 +468,7 @@ export const resultsData = [
     teamLeader: "Vaishnavi Hampannavar",
     status: "Accepted",
   },
-  { teamName: "vermavanshika000", teamLeader: "Vanshika", status: "Selected" },
+  { teamName: "vermavanshika000", teamLeader: "Vanshika", status: "Accepted" },
   { teamName: "AURORA", teamLeader: "MARUTHI P", status: "Accepted" },
   { teamName: "Philomaths", teamLeader: "Meghana K", status: "Selected" },
   {
@@ -492,9 +492,9 @@ export const resultsData = [
     status: "Selected",
   },
   {
-    teamName: "mitharechandrakiran",
+    teamName: "Screenify",
     teamLeader: "CHANDRAKIRAN MITHARE",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "Sustains", teamLeader: "Aman Singh", status: "Selected" },
   { teamName: "Despo", teamLeader: "Dipankar Chettri", status: "Selected" },
@@ -505,7 +505,7 @@ export const resultsData = [
     status: "Selected",
   },
   { teamName: "Aerotantrix", teamLeader: "Preethi", status: "Accepted" },
-  { teamName: "Noa", teamLeader: "Abhinav Gupta", status: "Selected" },
+  { teamName: "Noa", teamLeader: "Abhinav Gupta", status: "Accepted" },
   { teamName: "Srinidhip06", teamLeader: "Srinidhi", status: "Selected" },
   { teamName: "Innovator's", teamLeader: "Sarvesh Kumar", status: "Selected" },
   {
@@ -520,7 +520,7 @@ export const resultsData = [
     teamLeader: "Nishanth D R",
     status: "Accepted",
   },
-  { teamName: "ARAN", teamLeader: "Amrit Rajapurohit", status: "Selected" },
+  { teamName: "ARAN", teamLeader: "Amrit Rajapurohit", status: "Accepted" },
   {
     teamName: "TrashFormers",
     teamLeader: "Ritik Kumar Gupta",
@@ -551,9 +551,9 @@ export const resultsData = [
     status: "Selected",
   },
   {
-    teamName: "kartikjadhav0005",
+    teamName: "Shikshasetu",
     teamLeader: "Kartik Jadhav",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "Ctrl+Alt+Decentralize",
@@ -656,7 +656,7 @@ export const resultsData = [
     teamLeader: "Suman Raju Koujalagi",
     status: "Accepted",
   },
-  { teamName: "InnoveteX", teamLeader: "AM Dilli vamshi", status: "Selected" },
+  { teamName: "InnovativeX", teamLeader: "AM Dilli vamshi", status: "Accepted" },
   { teamName: "Team-Sdmit", teamLeader: "Subhas Hegde", status: "Accepted" },
   { teamName: "helloworld", teamLeader: "Naomi Pereira", status: "Selected" },
   { teamName: "MSN", teamLeader: "Medha Harish", status: "Selected" },
