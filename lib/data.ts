@@ -328,7 +328,7 @@ export const resultsData = [
   {
     teamName: "InventForGood",
     teamLeader: "Aditya Narayan Rout",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "Pathway Pioneers",
@@ -351,7 +351,7 @@ export const resultsData = [
   {
     teamName: "KLE Technological University",
     teamLeader: "Yash Shinde",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "Picapool", teamLeader: "Srijan shahi", status: "Selected" },
   {
@@ -506,7 +506,7 @@ export const resultsData = [
   },
   { teamName: "Aerotantrix", teamLeader: "Preethi", status: "Accepted" },
   { teamName: "Noa", teamLeader: "Abhinav Gupta", status: "Accepted" },
-  { teamName: "Srinidhip06", teamLeader: "Srinidhi", status: "Selected" },
+  { teamName: "Srinidhip06", teamLeader: "Srinidhi", status: "Accepted" },
   { teamName: "Innovator's", teamLeader: "Sarvesh Kumar", status: "Selected" },
   {
     teamName: "Innovative Warriors",
@@ -615,7 +615,7 @@ export const resultsData = [
   {
     teamName: "Code Seekers",
     teamLeader: "Advaith Acharya",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "NEW STATERS",
