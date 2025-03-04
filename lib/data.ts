@@ -534,7 +534,7 @@ export const resultsData = [
   {
     teamName: "Sustainable Architects",
     teamLeader: "Pratham Amritkar",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "RageVerse", teamLeader: "Dheepauk N", status: "Selected" },
   { teamName: "Sensor squad", teamLeader: "Thanyaa S", status: "Selected" },
@@ -626,7 +626,7 @@ export const resultsData = [
   {
     teamName: "Blastoise",
     teamLeader: "Abhinav Kumar Singh CSE-5",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "Team Horus",
@@ -669,14 +669,14 @@ export const resultsData = [
   {
     teamName: "InternSync",
     teamLeader: "Gourav Nahar",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "Insight Syndicate",
     teamLeader: "Alan Biju",
     status: "Accepted",
   },
-  { teamName: "punithmahi2006", teamLeader: "Punith D", status: "Selected" },
+  { teamName: "Autonomous self driving dilevery car", teamLeader: "Punith D", status: "Selected" },
   {
     teamName: "charangowda.m9141",
     teamLeader: "Padmacharan M",
