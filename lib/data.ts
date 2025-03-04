@@ -405,9 +405,9 @@ export const resultsData = [
     status: "Accepted",
   },
   {
-    teamName: "avinashsharma23407",
+    teamName: "Power Grab",
     teamLeader: "Avinash sharma",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "Calyirex", teamLeader: "Swasthika", status: "Selected" },
   { teamName: "CalmRevivers", teamLeader: "Karan D", status: "Accepted" },
@@ -422,7 +422,7 @@ export const resultsData = [
     status: "Selected",
   },
   { teamName: "SPATIKA", teamLeader: "Srujan Hari", status: "Accepted" },
-  { teamName: "Better Tomorrow", teamLeader: "Ganesh C", status: "Selected" },
+  { teamName: "Better Tomorrow", teamLeader: "Ganesh C", status: "Accepted" },
   {
     teamName: "Team Boreas",
     teamLeader: "Dr. L HARISH KUMAR",
@@ -539,7 +539,7 @@ export const resultsData = [
   { teamName: "RageVerse", teamLeader: "Dheepauk N", status: "Selected" },
   { teamName: "Sensor squad", teamLeader: "Thanyaa S", status: "Selected" },
   { teamName: "anirudhshetty321", teamLeader: "Anirudh S", status: "Selected" },
-  { teamName: "BITverse", teamLeader: "Krishay Manjunath", status: "Selected" },
+  { teamName: "BITverse", teamLeader: "Krishay Manjunath", status: "Accepted" },
   {
     teamName: "vishalangadi2004",
     teamLeader: "Vishal Raju Angadi",
@@ -643,7 +643,7 @@ export const resultsData = [
     teamLeader: "Sathvik S Nayak",
     status: "Selected",
   },
-  { teamName: "United Minds", teamLeader: "Manvi H J", status: "Selected" },
+  { teamName: "United Minds", teamLeader: "Manvi H J", status: "Accepted" },
   {
     teamName: "Vision Forge",
     teamLeader: "Gogineni Naga Venkata Nihar Chowdary",
@@ -660,7 +660,7 @@ export const resultsData = [
   { teamName: "Team-Sdmit", teamLeader: "Subhas Hegde", status: "Accepted" },
   { teamName: "helloworld", teamLeader: "Naomi Pereira", status: "Selected" },
   { teamName: "MSN", teamLeader: "Medha Harish", status: "Selected" },
-  { teamName: "blankSpace", teamLeader: "Likhitha K M", status: "Selected" },
+  { teamName: "blankSpace", teamLeader: "Likhitha K M", status: "Accepted" },
   {
     teamName: "shridhar20062005",
     teamLeader: "Shridhar J",
@@ -676,7 +676,7 @@ export const resultsData = [
     teamLeader: "Alan Biju",
     status: "Accepted",
   },
-  { teamName: "Autonomous self driving dilevery car", teamLeader: "Punith D", status: "Selected" },
+  { teamName: "Autonomous self driving dilevery car", teamLeader: "Punith D", status: "Accepted" },
   {
     teamName: "charangowda.m9141",
     teamLeader: "Padmacharan M",
