@@ -511,7 +511,7 @@ export const resultsData = [
   {
     teamName: "Innovative Warriors",
     teamLeader: "Yanakandla Mani Sharath",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "slaves of ai", teamLeader: "Shivani Wale", status: "Accepted" },
   {
