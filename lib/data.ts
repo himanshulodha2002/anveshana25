@@ -586,7 +586,7 @@ export const resultsData = [
   {
     teamName: "sharathsc3000",
     teamLeader: "Sharath Satish Chikkappanavar",
-    status: "Selected",
+    status: "Accepted",
   },
   {
     teamName: "PULSE GUARD INNOVATORS",
@@ -647,7 +647,7 @@ export const resultsData = [
   {
     teamName: "Vision Forge",
     teamLeader: "Gogineni Naga Venkata Nihar Chowdary",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "VYASA", teamLeader: "Vallish S", status: "Accepted" },
   { teamName: "Abhishek", teamLeader: "Abhishek e", status: "Accepted" },
@@ -683,7 +683,7 @@ export const resultsData = [
     status: "Accepted",
   },
   { teamName: "namanvjain456", teamLeader: "Naman Jain", status: "Selected" },
-  { teamName: "Matrix Coders", teamLeader: "Mehaboob S", status: "Selected" },
+  { teamName: "Matrix Coders", teamLeader: "Mehaboob S", status: "Accepted" },
   { teamName: "VoltX", teamLeader: "Shrivatsa S Kulkarni", status: "Accepted" },
   { teamName: "Tech Titans", teamLeader: "Aadithya Nair", status: "Selected" },
   {
