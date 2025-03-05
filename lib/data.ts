@@ -323,7 +323,6 @@ export const quickLinks = [
   { label: "FAQs", href: "/faq", target: "_self", rel: "" },
 ] as const;
 
-
 export const resultsData = [
   {
     teamName: "InventForGood",
@@ -341,7 +340,7 @@ export const resultsData = [
     teamLeader: "Koushik Bose",
     status: "Selected",
   },
-  { teamName: "ajanil2612", teamLeader: "Anil Jamakhandi", status: "Selected" },
+  { teamName: "ajanil2612", teamLeader: "Anil Jamakhandi", status: "Accepted" },
   { teamName: "Pinnacle Minds", teamLeader: "Sai Vivek Y", status: "Accepted" },
   {
     teamName: "TEAM TRYDAN",
@@ -353,16 +352,16 @@ export const resultsData = [
     teamLeader: "Yash Shinde",
     status: "Accepted",
   },
-  { teamName: "Picapool", teamLeader: "Srijan shahi", status: "Selected" },
+  { teamName: "Picapool", teamLeader: "Srijan shahi", status: "Accepted" },
   {
     teamName: "abhaynandan001",
     teamLeader: "Abhay Nandan",
     status: "Selected",
   },
   {
-    teamName: "kambaloor44",
+    teamName: "Aiye vaidya pro",
     teamLeader: "Sumukha Kambaloor",
-    status: "Selected",
+    status: "Accepted",
   },
   { teamName: "VaxiMo", teamLeader: "Shivam Sharma", status: "Selected" },
   {
@@ -605,7 +604,7 @@ export const resultsData = [
     teamLeader: "Saviya Saviya",
     status: "Selected",
   },
-  { teamName: "Agrisonique", teamLeader: "Kirubasuthan K", status: "Selected" },
+  { teamName: "Agrisonique", teamLeader: "Kirubasuthan K", status: "Accepted" },
   { teamName: "GARUDA", teamLeader: "Srijan u", status: "Accepted" },
   {
     teamName: "The Syndicate",
@@ -656,10 +655,14 @@ export const resultsData = [
     teamLeader: "Suman Raju Koujalagi",
     status: "Accepted",
   },
-  { teamName: "InnovativeX", teamLeader: "AM Dilli vamshi", status: "Accepted" },
+  {
+    teamName: "InnovativeX",
+    teamLeader: "AM Dilli vamshi",
+    status: "Accepted",
+  },
   { teamName: "Team-Sdmit", teamLeader: "Subhas Hegde", status: "Accepted" },
   { teamName: "helloworld", teamLeader: "Naomi Pereira", status: "Selected" },
-  { teamName: "MSN", teamLeader: "Medha Harish", status: "Selected" },
+  { teamName: "MSN", teamLeader: "Medha Harish", status: "Accepted" },
   { teamName: "blankSpace", teamLeader: "Likhitha K M", status: "Accepted" },
   {
     teamName: "shridhar20062005",
@@ -676,7 +679,11 @@ export const resultsData = [
     teamLeader: "Alan Biju",
     status: "Accepted",
   },
-  { teamName: "Autonomous self driving dilevery car", teamLeader: "Punith D", status: "Accepted" },
+  {
+    teamName: "Autonomous self driving dilevery car",
+    teamLeader: "Punith D",
+    status: "Accepted",
+  },
   {
     teamName: "charangowda.m9141",
     teamLeader: "Padmacharan M",
@@ -687,7 +694,7 @@ export const resultsData = [
   { teamName: "VoltX", teamLeader: "Shrivatsa S Kulkarni", status: "Accepted" },
   { teamName: "Tech Titans", teamLeader: "Aadithya Nair", status: "Selected" },
   {
-    teamName: "Visionaries",
+    teamName: "Alpha Clan",
     teamLeader: "Gaurav Siddharth",
     status: "Waitlisted",
   },
@@ -752,6 +759,115 @@ export const resultsData = [
   {
     teamName: "kumar.kislay051",
     teamLeader: "Kumar Kislay",
+    status: "Waitlisted",
+  },
+  ////////////////////////////////////////////////////////////////
+  {
+    teamName: "3agarwalarpit101",
+    teamLeader: "Arpit Agarwal",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "syedkashifali755",
+    teamLeader: "SYED TOUSEEF ALI",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "jyothiradithyaj1856",
+    teamLeader: "Jyothiradithya J",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "The Root Collective",
+    teamLeader: "Nilan Shetty",
+    status: "Waitlisted",
+  },
+  { teamName: "Bugs", teamLeader: "Agnik chakraborty", status: "Waitlisted" },
+  {
+    teamName: "405 NOT FOUND",
+    teamLeader: "Ananya Akkihal",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "saanvibhandiwad",
+    teamLeader: "Saanvi S Bhandiwad",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Visionaries United",
+    teamLeader: "Ajay Kumar Rauniyar",
+    status: "Waitlisted",
+  },
+  { teamName: "NexusAI", teamLeader: "Jagadish JS", status: "Waitlisted" },
+  { teamName: "ParkEase", teamLeader: "Aditya Pandey", status: "Waitlisted" },
+  { teamName: "BioShine", teamLeader: "Sumit Mamdy", status: "Waitlisted" },
+  { teamName: "24ug1bycs152", teamLeader: "CHARAN S", status: "Waitlisted" },
+  { teamName: "BotGuy", teamLeader: "Nobel Das", status: "Waitlisted" },
+  { teamName: "Lumina", teamLeader: "Hardik Vasudev", status: "Waitlisted" },
+  {
+    teamName: "Team Rocket",
+    teamLeader: "Anjali Gollamudi",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "ananyapriyadarshini08",
+    teamLeader: "Ananya Priyadarshini",
+    status: "Waitlisted",
+  },
+  { teamName: "hutthesh2004", teamLeader: "Hutthesh BS", status: "Waitlisted" },
+  { teamName: "nehasunil588", teamLeader: "Neha Sunil", status: "Waitlisted" },
+  {
+    teamName: "Tenet",
+    teamLeader: "Satvika Prashanth Hiremath",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Hacktivators",
+    teamLeader: "Dhavalashree Jain L A",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "vedantagrawall444203",
+    teamLeader: "Vedant Agrawal",
+    status: "Waitlisted",
+  },
+  { teamName: "ZenithX", teamLeader: "MANJU A R", status: "Waitlisted" },
+  { teamName: "innoVisors", teamLeader: "Shanavi B A", status: "Waitlisted" },
+  { teamName: "Forever", teamLeader: "Sudharshan V", status: "Waitlisted" },
+  { teamName: "kamalsai8636", teamLeader: "Kamal Sai A", status: "Waitlisted" },
+  {
+    teamName: "Toxic Coders",
+    teamLeader: "FRANCIS GLEN PEREIRA",
+    status: "Waitlisted",
+  },
+  {
+    teamName: "Sparkslead",
+    teamLeader: "Prabhat Jaiswal",
+    status: "Waitlisted",
+  },
+  { teamName: "jainsomya3011", teamLeader: "Somya Jain", status: "Waitlisted" },
+  {
+    teamName: "Attack on Errors",
+    teamLeader: "Shashank S B",
+    status: "Waitlisted",
+  },
+  { teamName: "Nutri reach", teamLeader: "Adithi V", status: "Waitlisted" },
+  {
+    teamName: "vijaykumarhadimani77",
+    teamLeader: "Vijaykumar Hadimani",
+    status: "Waitlisted",
+  },
+  { teamName: "GARUDA", teamLeader: "Yashvanth M", status: "Waitlisted" },
+  { teamName: "ananyahv26", teamLeader: "Ananya H V", status: "Waitlisted" },
+  {
+    teamName: "CODE FESTERS",
+    teamLeader: "A ARAVIND KUMAAR",
+    status: "Waitlisted",
+  },
+  { teamName: "craftors", teamLeader: "Md Afreed pasha", status: "Waitlisted" },
+  {
+    teamName: "i am going to space",
+    teamLeader: "Shivani sharma",
     status: "Waitlisted",
   },
 ];
