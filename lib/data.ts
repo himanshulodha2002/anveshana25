@@ -408,7 +408,7 @@ export const resultsData = [
     teamLeader: "Avinash sharma",
     status: "Accepted",
   },
-  { teamName: "Calyirex", teamLeader: "Swasthika", status: "Selected" },
+  { teamName: "Calyirex", teamLeader: "Swasthika", status: "Accepted" },
   { teamName: "CalmRevivers", teamLeader: "Karan D", status: "Accepted" },
   {
     teamName: "shrijith2910",
