@@ -696,12 +696,12 @@ export const resultsData = [
   {
     teamName: "Alpha Clan",
     teamLeader: "Gaurav Siddharth",
-    status: "Waitlisted",
+    status: "Accepted",
   },
   {
     teamName: "parwathsrirajuk",
     teamLeader: "Parwath Sri Raju K",
-    status: "Waitlisted",
+    status: "Accepted",
   },
   { teamName: "E^RHS", teamLeader: "Shree Shenpagam", status: "Waitlisted" },
   {
@@ -712,9 +712,9 @@ export const resultsData = [
   {
     teamName: "Scuffed_Engineers",
     teamLeader: "Sameer Belthur",
-    status: "Waitlisted",
+    status: "Accepted",
   },
-  { teamName: "Sanjana", teamLeader: "Sanjana M", status: "Waitlisted" },
+  { teamName: "Sanjana", teamLeader: "Sanjana M", status: "Accepted" },
   {
     teamName: "asscr",
     teamLeader: "Masood khan",
@@ -740,15 +740,15 @@ export const resultsData = [
   {
     teamName: "Syntax Error",
     teamLeader: "SM VINAY KUMAR",
-    status: "Waitlisted",
+    status: "Accepted",
   },
   {
-    teamName: "kangralkarjay",
+    teamName: "Swarajya",
     teamLeader: "Jay Kangralkar",
-    status: "Waitlisted",
+    status: "Accepted",
   },
   { teamName: "Tech Mavericks", teamLeader: "Chinmay J", status: "Waitlisted" },
-  { teamName: "Agasthya", teamLeader: "Hemanth Yadav", status: "Waitlisted" },
+  { teamName: "Agastya", teamLeader: "Hemanth Yadav", status: "Accepted" },
   { teamName: "FlashBack", teamLeader: "Abul Khasim K", status: "Waitlisted" },
   { teamName: "lavanyan1105", teamLeader: "Lavanya N", status: "Waitlisted" },
   {
