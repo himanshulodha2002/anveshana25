@@ -714,7 +714,7 @@ export const resultsData = [
     teamLeader: "Sameer Belthur",
     status: "Accepted",
   },
-  { teamName: "Sanjana", teamLeader: "Sanjana M", status: "Accepted" },
+  { teamName: "Nexia", teamLeader: "Sanjana M", status: "Accepted" },
   {
     teamName: "asscr",
     teamLeader: "Masood khan",
