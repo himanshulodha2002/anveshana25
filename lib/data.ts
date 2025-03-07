@@ -222,7 +222,7 @@ export const timelineEvents = [
   {
     icon: Presentation,
     title: "Round 2: Virtual Presentation",
-    date: "March 6 - March 8, 2025",
+    date: "March 12 - March 13, 2025",
     description:
       "Shortlisted teams present their project virtually. Ensure a reliable device and internet connection for an uninterrupted presentation. Top 50 teams will advance to the final round.",
   },
