@@ -469,7 +469,7 @@ export const resultsData = [
   },
   { teamName: "vermavanshika000", teamLeader: "Vanshika", status: "Accepted" },
   { teamName: "AURORA", teamLeader: "MARUTHI P", status: "Accepted" },
-  { teamName: "Philomaths", teamLeader: "Meghana K", status: "Selected" },
+  { teamName: "Philomaths", teamLeader: "Meghana K", status: "Accepted" },
   {
     teamName: "amanvishwakarma2207",
     teamLeader: "Aman Vishwakarma",
@@ -796,7 +796,7 @@ export const resultsData = [
   {
     teamName: "Visionaries United",
     teamLeader: "Ajay Kumar Rauniyar",
-    status: "Waitlisted",
+    status: "Accepted",
   },
   { teamName: "NexusAI", teamLeader: "Jagadish JS", status: "Waitlisted" },
   { teamName: "ParkEase", teamLeader: "Aditya Pandey", status: "Waitlisted" },
@@ -819,7 +819,7 @@ export const resultsData = [
   {
     teamName: "Tenet",
     teamLeader: "Satvika Prashanth Hiremath",
-    status: "Waitlisted",
+    status: "Accepted",
   },
   {
     teamName: "Hacktivators",
