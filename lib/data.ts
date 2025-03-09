@@ -692,7 +692,7 @@ export const resultsData = [
   { teamName: "namanvjain456", teamLeader: "Naman Jain", status: "Selected" },
   { teamName: "Matrix Coders", teamLeader: "Mehaboob S", status: "Accepted" },
   { teamName: "VoltX", teamLeader: "Shrivatsa S Kulkarni", status: "Accepted" },
-  { teamName: "Tech Titans", teamLeader: "Aadithya Nair", status: "Selected" },
+  { teamName: "Tech Titans", teamLeader: "Aadithya Nair", status: "Accepted" },
   {
     teamName: "Alpha Clan",
     teamLeader: "Gaurav Siddharth",
@@ -803,7 +803,7 @@ export const resultsData = [
   { teamName: "BioShine", teamLeader: "Sumit Mamdy", status: "Waitlisted" },
   { teamName: "24ug1bycs152", teamLeader: "CHARAN S", status: "Waitlisted" },
   { teamName: "BotGuy", teamLeader: "Nobel Das", status: "Waitlisted" },
-  { teamName: "Lumina", teamLeader: "Hardik Vasudev", status: "Waitlisted" },
+  { teamName: "Lumina", teamLeader: "Hardik Vasudev", status: "Accepted" },
   {
     teamName: "Team Rocket",
     teamLeader: "Anjali Gollamudi",
@@ -851,13 +851,13 @@ export const resultsData = [
     teamLeader: "Shashank S B",
     status: "Waitlisted",
   },
-  { teamName: "Nutri reach", teamLeader: "Adithi V", status: "Waitlisted" },
+  { teamName: "Nutri reach", teamLeader: "Adithi V", status: "Accepted" },
   {
     teamName: "vijaykumarhadimani77",
     teamLeader: "Vijaykumar Hadimani",
     status: "Waitlisted",
   },
-  { teamName: "GARUDA", teamLeader: "Yashvanth M", status: "Waitlisted" },
+  { teamName: "GARUDA", teamLeader: "Yashvanth M", status: "Accepted" },
   { teamName: "ananyahv26", teamLeader: "Ananya H V", status: "Waitlisted" },
   {
     teamName: "CODE FESTERS",
