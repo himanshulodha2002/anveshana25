@@ -749,7 +749,7 @@ export const resultsData = [
   },
   { teamName: "Tech Mavericks", teamLeader: "Chinmay J", status: "Selected" },
   { teamName: "Agastya", teamLeader: "Hemanth Yadav", status: "Accepted" },
-  { teamName: "FlashBack", teamLeader: "Abul Khasim K", status: "Selected" },
+  { teamName: "FlashBack", teamLeader: "Abul Khasim K", status: "Accepted" },
   { teamName: "lavanyan1105", teamLeader: "Lavanya N", status: "Selected" },
   {
     teamName: "diyajindal265",
