@@ -363,7 +363,7 @@ export const resultsData = [
     teamLeader: "Sumukha Kambaloor",
     status: "Accepted",
   },
-  { teamName: "VaxiMo", teamLeader: "Shivam Sharma", status: "Selected" },
+  { teamName: "VaxiMo", teamLeader: "Shivam Sharma", status: "Rejected" },
   {
     teamName: "ElectroStorm",
     teamLeader: "AMIT KUMAR SINGH",
@@ -382,7 +382,7 @@ export const resultsData = [
   {
     teamName: "abhishek1530002",
     teamLeader: "Abhishek Dixit",
-    status: "Selected",
+    status: "Rejected",
   },
   { teamName: "VISION", teamLeader: "Shyamkumar M", status: "Accepted" },
   {
@@ -418,7 +418,7 @@ export const resultsData = [
   {
     teamName: "TECHKNIGHTS_VARDAAN",
     teamLeader: "Akash Gupta",
-    status: "Selected",
+    status: "Rejected",
   },
   { teamName: "SPATIKA", teamLeader: "Srujan Hari", status: "Accepted" },
   { teamName: "Better Tomorrow", teamLeader: "Ganesh C", status: "Accepted" },
@@ -445,7 +445,7 @@ export const resultsData = [
   {
     teamName: "Multi-Model Drone",
     teamLeader: "Rajkumar hc",
-    status: "Selected",
+    status: "Rejected",
   },
   { teamName: "CPR SHEET", teamLeader: "Poorvik K", status: "Accepted" },
   {
@@ -453,15 +453,15 @@ export const resultsData = [
     teamLeader: "Katcharam Raja Abhijeeth",
     status: "Accepted",
   },
-  { teamName: "chandan00chandu7", teamLeader: "Chandan S", status: "Selected" },
+  { teamName: "chandan00chandu7", teamLeader: "Chandan S", status: "Rejected" },
   { teamName: "kalpitha C M", teamLeader: "Kalpitha C M", status: "Selected" },
-  { teamName: "PREserwe", teamLeader: "Dhruven Bhalerao", status: "Selected" },
+  { teamName: "PREserwe", teamLeader: "Dhruven Bhalerao", status: "Rejected" },
   {
     teamName: "Fashion_coders",
     teamLeader: "MRINAL MIDHA",
     status: "Accepted",
   },
-  { teamName: "Cyber Savvy", teamLeader: "Impu Rao HM", status: "Selected" },
+  { teamName: "Cyber Savvy", teamLeader: "Impu Rao HM", status: "Rejected" },
   {
     teamName: "Codewizards",
     teamLeader: "Vaishnavi Hampannavar",
@@ -473,35 +473,35 @@ export const resultsData = [
   {
     teamName: "amanvishwakarma2207",
     teamLeader: "Aman Vishwakarma",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "sagarkofficial1912136",
     teamLeader: "Sagar K",
-    status: "Selected",
+    status: "Rejected",
   },
   { teamName: "ARC", teamLeader: "Luke Roman Noronha", status: "Selected" },
-  { teamName: "Falcons", teamLeader: "Manu Sagar", status: "Selected" },
+  { teamName: "Falcons", teamLeader: "Manu Sagar", status: "Rejected" },
   { teamName: "Z Gen Saura Urja", teamLeader: "NIKHIL KV", status: "Accepted" },
-  { teamName: "21a20.joywin", teamLeader: "Joywin Bennis", status: "Selected" },
-  { teamName: "f4", teamLeader: "shweeta soni", status: "Selected" },
+  { teamName: "21a20.joywin", teamLeader: "Joywin Bennis", status: "Rejected" },
+  { teamName: "f4", teamLeader: "shweeta soni", status: "Rejected" },
   {
     teamName: "BIG BUCKS INNOVATION",
     teamLeader: "BALAJI ARUMUGAM",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "Screenify",
     teamLeader: "CHANDRAKIRAN MITHARE",
     status: "Accepted",
   },
-  { teamName: "Sustains", teamLeader: "Aman Singh", status: "Selected" },
+  { teamName: "Sustains", teamLeader: "Aman Singh", status: "Rejected" },
   { teamName: "Despo", teamLeader: "Dipankar Chettri", status: "Selected" },
   { teamName: "CivicX", teamLeader: "Srisha Prajwal G", status: "Accepted" },
   {
     teamName: "prasannasimha5002",
     teamLeader: "PRASANNA KUMAR SIMHADRI",
-    status: "Selected",
+    status: "Rejected",
   },
   { teamName: "Aerotantrix", teamLeader: "Preethi", status: "Accepted" },
   { teamName: "Noa", teamLeader: "Abhinav Gupta", status: "Accepted" },
@@ -523,7 +523,7 @@ export const resultsData = [
   {
     teamName: "TrashFormers",
     teamLeader: "Ritik Kumar Gupta",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "dharwadshreya",
@@ -536,18 +536,18 @@ export const resultsData = [
     status: "Accepted",
   },
   { teamName: "RageVerse", teamLeader: "Dheepauk N", status: "Selected" },
-  { teamName: "Sensor squad", teamLeader: "Thanyaa S", status: "Selected" },
-  { teamName: "anirudhshetty321", teamLeader: "Anirudh S", status: "Selected" },
+  { teamName: "Sensor squad", teamLeader: "Thanyaa S", status: "Rejected" },
+  { teamName: "anirudhshetty321", teamLeader: "Anirudh S", status: "Rejected" },
   { teamName: "BITverse", teamLeader: "Krishay Manjunath", status: "Accepted" },
   {
     teamName: "vishalangadi2004",
     teamLeader: "Vishal Raju Angadi",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "Cashew Brownie",
     teamLeader: "Molanguru Sonu Adithya",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "Shikshasetu",
@@ -567,7 +567,7 @@ export const resultsData = [
   {
     teamName: "Predicamentendencified! Innovations",
     teamLeader: "Ganesh T N Bhushan",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "Tech Innovators",
@@ -609,7 +609,7 @@ export const resultsData = [
   {
     teamName: "The Syndicate",
     teamLeader: "Harshit Bisht",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "Code Seekers",
@@ -635,12 +635,12 @@ export const resultsData = [
   {
     teamName: "02fe23bcs411",
     teamLeader: "Arun Sadalgekar",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "Quantum Coders",
     teamLeader: "Sathvik S Nayak",
-    status: "Selected",
+    status: "Rejected",
   },
   { teamName: "United Minds", teamLeader: "Manvi H J", status: "Accepted" },
   {
@@ -689,7 +689,7 @@ export const resultsData = [
     teamLeader: "Padmacharan M",
     status: "Accepted",
   },
-  { teamName: "namanvjain456", teamLeader: "Naman Jain", status: "Selected" },
+  { teamName: "namanvjain456", teamLeader: "Naman Jain", status: "Rejected" },
   { teamName: "Matrix Coders", teamLeader: "Mehaboob S", status: "Accepted" },
   { teamName: "VoltX", teamLeader: "Shrivatsa S Kulkarni", status: "Accepted" },
   { teamName: "Tech Titans", teamLeader: "Aadithya Nair", status: "Accepted" },
@@ -723,20 +723,20 @@ export const resultsData = [
   {
     teamName: "mukkavallisrinivas",
     teamLeader: "Mukkavalli Srinivas",
-    status: "Selected",
+    status: "Rejected",
   },
-  { teamName: "Magpie", teamLeader: "Kishan MN", status: "Selected" },
+  { teamName: "Magpie", teamLeader: "Kishan MN", status: "Rejected" },
   {
     teamName: "Code Crushers",
     teamLeader: "N. Suchitra",
-    status: "Selected",
+    status: "Rejected",
   },
   {
     teamName: "nnayanagc",
     teamLeader: "Nayanagc Nayana",
-    status: "Selected",
+    status: "Rejected",
   },
-  { teamName: "bharathac7", teamLeader: "bharath c", status: "Selected" },
+  { teamName: "bharathac7", teamLeader: "bharath c", status: "Rejected" },
   {
     teamName: "Syntax Error",
     teamLeader: "SM VINAY KUMAR",
