@@ -25,7 +25,7 @@ export default function ActiveSectionContextProvider({
   const [timeOfLastClick, setTimeOfLastClick] = useState(0);
   const pathname = usePathname();
 
-  // Update active section based on pathname
+  // Improved path handling with early return pattern
   useEffect(() => {
     // Remove leading slash and convert to title case
     const currentPath = pathname ? pathname.slice(1) : "";
